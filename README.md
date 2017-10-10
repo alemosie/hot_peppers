@@ -32,4 +32,4 @@ Field | Description
 "link" | PepperScale article containing more information on the pepper
 
 
-![Mesmerizing Bell Pepper](https://media.giphy.com/media/26zzcRLi10ZAiTylW/giphy.gif)
+![Alt Text](https://media.giphy.com/media/3oriO5w4cPs5SECFmU/giphy.gif)
