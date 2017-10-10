@@ -19,7 +19,7 @@ Pepper hotness is based on the **Scoville Scale**, a measurement of the pungency
 ### Schema
 
 Field | Description
---- | --- | ---
+--- | ---
 "name"| Name of the pepper; unique
 "species" | Pepper species. All hot peppers belong to the Capsicum genus (part of the nightshade family), but there are multiple species within it.
 "heat" | How hot the pepper is perceived to be: "Mild", "Medium", "Extra Hot", "Super Hot" ([their](https://www.pepperscale.com/hot-pepper-list/) categories, not mine)
