@@ -6,15 +6,15 @@ I grew up with very little spice in my diet -- my mother is Irish, what can I sa
 
 ## Data
 
-Data is from [PepperScale's Hot Pepper List](https://www.pepperscale.com/hot-pepper-list/).
-
-I used Python, [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/), and [Pandas](https://pandas.pydata.org/pandas-docs/stable/) to extract, sanitize, and convert the data into `data/peppers.json`, available for your enjoyment.
+*Note: Still a WIP!*
 
 ### Background
 
-The data is from [PepperScale](https://www.pepperscale.com), a website that seems to be entirely dedicated to the topic of peppers. I have no affiliation with the site, but am grateful for their work!
+The data is from [PepperScale](https://www.pepperscale.com), a website that seems to be entirely dedicated to the topic of peppers. I have no affiliation with the site, but am grateful for their work! I specifically curated this dataset from their [Hot Pepper List](https://www.pepperscale.com/hot-pepper-list/).
 
-Pepper hotness is based on the **Scoville Scale**, a measurement of the pungency chili peppers running from mild to extreme. If you're interested in the scale -- along with its many pros and cons -- I recommend you read PepperScale's article on the subject [here](https://www.pepperscale.com/what-is-the-scoville-scale/), or trusty [Wikipedia](https://en.wikipedia.org/wiki/Scoville_scale).
+Pepper hotness is based on the **Scoville Scale**, a measurement of the pungency of chili peppers running from mild to extreme. If you're interested in the scale -- along with its many pros and cons -- I recommend you read PepperScale's article on the subject [here](https://www.pepperscale.com/what-is-the-scoville-scale/), or trusty [Wikipedia](https://en.wikipedia.org/wiki/Scoville_scale).
+
+I used Python, [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/), and [Pandas](https://pandas.pydata.org/pandas-docs/stable/) to extract, sanitize, and convert the data into `data/peppers.json`, available for your enjoyment.
 
 ### Schema
 
