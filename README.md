@@ -1,4 +1,4 @@
-# Hot Peppers
+# Hot Peppers 🌶️🌶️
 
 A fun side project exploring hot peppers!
 
