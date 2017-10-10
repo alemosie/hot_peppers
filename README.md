@@ -12,7 +12,7 @@ I used Python, [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4
 
 ### Background
 
-The data is from PepperScale, a website that seems to be entirely dedicated to the topic of peppers. I have no affiliation with the site, but am grateful for their work!
+The data is from [PepperScale](https://www.pepperscale.com), a website that seems to be entirely dedicated to the topic of peppers. I have no affiliation with the site, but am grateful for their work!
 
 Pepper hotness is based on the **Scoville Scale**, a measurement of the pungency chili peppers running from mild to extreme. If you're interested in the scale -- along with its many pros and cons -- I recommend you read PepperScale's article on the subject [here](https://www.pepperscale.com/what-is-the-scoville-scale/), or trusty [Wikipedia](https://en.wikipedia.org/wiki/Scoville_scale).
 
@@ -25,8 +25,11 @@ Field | Description
 "heat" | How hot the pepper is perceived to be: "Mild", "Medium", "Extra Hot", "Super Hot" ([their](https://www.pepperscale.com/hot-pepper-list/) categories, not mine)
 "region" | Region of the world in which the pepper grows; based off of provided origin
 "origin" | Origin of the pepper
-"min_shu" | The mildest a pepper could be, as recorded in [Scoville heat units (SHU)](https://www.pepperscale.com/scoville-heat-units/)
-"max_shu" | The hottest a pepper could be, as recorded in [Scoville heat units (SHU)](https://www.pepperscale.com/scoville-heat-units/)
+"min_shu" | The mildest a pepper could be, recorded in [Scoville heat units (SHU)](https://www.pepperscale.com/scoville-heat-units/)
+"max_shu" | The hottest a pepper could be, recorded in [Scoville heat units (SHU)](https://www.pepperscale.com/scoville-heat-units/)
 "min_jrp" | Jalapeño Reference Point (JRP); minimum recorded value for number of times hotter than a jalapeño the pepper in question is. A negative number is milder than a jalapeño; a positive number is hotter than a jalapeño.
 "max_jrp" | Jalapeño Reference Point (JRP); maximum recorded value for number of times hotter than a jalapeno the pepper in question is. A negative number is milder than a jalapeño; a positive number is hotter than a jalapeño.
-"link" | PepperScale article containing more information on the pepper.
+"link" | PepperScale article containing more information on the pepper
+
+
+![Mesmerizing Bell Pepper](https://media.giphy.com/media/26zzcRLi10ZAiTylW/giphy.gif)
