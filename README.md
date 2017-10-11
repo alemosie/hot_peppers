@@ -8,7 +8,7 @@ I grew up with very little spice in my diet -- my mother is Irish, what can I sa
 - Web scraping (Requests)
 - HTML parsing (BeautifulSoup)
 - Data sanitization (Pandas)
-- Interactive Data Viz (Plotly)
+- Interactive viz (Plotly)
 - Scalability: static vs dynamic data fetching, modularization
 
 ## Data
@@ -23,22 +23,22 @@ I used Python, [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4
 
 ### Schema
 
-Basis for min/max [Scoville heat units (SHU)](https://www.pepperscale.com/scoville-heat-units/): Individual hot peppers have a range of heat, depending on where they are grown, how long they’ve matured, and the amount of sun they’ve received.
-
-Basis for min/max [Jalapeno Reference Point (JRP)](https://www.pepperscale.com/jalapeno-peppers/): The JRP is a subjective comparison of a pepper against a reference point most everyone has tried, resulting in a range of opinions. A negative number (like -50) means the amount of times the pepper is milder. A zero (0) means equal heat. Any positive numbers show the amount of times that the pepper is hotter than a jalapeño.
-
 Field | Description
 --- | ---
 "name"| Name of the pepper; unique
 "species" | Pepper species. All hot peppers belong to the Capsicum genus (part of the nightshade family), but there are multiple species within it.
 "heat" | How hot the pepper is perceived to be: "Mild", "Medium", "Extra Hot", "Super Hot" ([their](https://www.pepperscale.com/hot-pepper-list/) categories, not mine)
-"region" | Region of the world in which the pepper grows; based off of provided origin
-"origin" | Origin of the pepper
+"region" | Region of the world in which the pepper grows; based on provided origin. (Standardized origin)
+"origin" | Where the pepper grows; values are country, region, or continent as listed
 "min_shu" | Scoville Heat Units (SHU) for the mildest variation of the pepper
 "max_shu" | Scoville Heat Units (SHU) for the hottest variation of the pepper
 "min_jrp" | Jalapeño Reference Point (JRP); minimum value for number of times hotter than a jalapeño the pepper is
 "max_jrp" | Jalapeño Reference Point (JRP); maximum value for number of times hotter than a jalapeño the pepper is
 "link" | PepperScale article containing more information on the pepper
+
+Basis for min/max [Scoville heat units (SHU)](https://www.pepperscale.com/scoville-heat-units/): Individual hot peppers have a range of heat, depending on where they are grown, how long they’ve matured, and the amount of sun they’ve received.
+
+Basis for min/max [Jalapeno Reference Point (JRP)](https://www.pepperscale.com/jalapeno-peppers/): The JRP is a subjective comparison of a pepper against a reference point most everyone has tried, resulting in a range of opinions. A negative number (like -50) means the amount of times the pepper is milder. A zero (0) means equal heat. Any positive numbers show the amount of times that the pepper is hotter than a jalapeño.
 
 ### Helpful resources
 
