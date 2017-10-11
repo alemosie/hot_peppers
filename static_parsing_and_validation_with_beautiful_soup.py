@@ -5,7 +5,6 @@ import re
 from datetime import datetime
 import json
 from pprint import pprint
-import matplotlib.pyplot as plt
 
 print "\nParsing raw HTML from PepperScale website..."
 
@@ -60,7 +59,7 @@ print "\t Unique: ", peppers_data["name"].nunique() == len(peppers_data)
 print "\n\n2) Scoville heat units (SHU) are positive numbers (int/float)"
 
 def validate_raw_shu(field):
-    print "\t  Is null:", (~peppers_data[field].str.isdigit()).sum() 
+    print "\t  Is null:", (~peppers_data[field].str.isdigit()).sum()
     print "\t  Type:", peppers_data[field].dtype
     print "\t  Min value:", repr(peppers_data[peppers_data[field].str.isdigit()][field].min())
 
@@ -71,15 +70,15 @@ print "\tMax SHU"
 validate_raw_shu("max_shu")
 
 print "\n\tSanitizing SHU fields..."
-    
+
 peppers_data["min_shu"] = peppers_data["min_shu"].apply(lambda x: int(x) if x != "" else None)
 peppers_data["max_shu"] = peppers_data["max_shu"].apply(lambda x: int(x) if x != "" else None)
 
 def validate_sanitized_shu(field):
-    print "\t  Is null:", peppers_data[field].isnull().sum() 
+    print "\t  Is null:", peppers_data[field].isnull().sum()
     print "\t  Type:", peppers_data[field].dtype
     print "\t  Min value:", repr(peppers_data[peppers_data[field].notnull()][field].min())
-    
+
 print "\tMin SHU"
 validate_sanitized_shu("min_shu")
 
@@ -92,7 +91,7 @@ validate_sanitized_shu("max_shu")
 print "\n\n3) JRP range values are represented as 'min_jrp' and 'max_jrp'. JRP value is either a positive or negative number (int/float)."
 
 def validate_jrp(field):
-    print "\t  Is null:", peppers_data[field].isnull().sum() 
+    print "\t  Is null:", peppers_data[field].isnull().sum()
     print "\t  Type:", peppers_data[field].dtype
     print "\t  Min value:", repr(peppers_data[field].min())
     print "\t  Malformed range:", (~peppers_data["jrp"].str.contains("to")).sum()
@@ -103,7 +102,7 @@ print "\n\tSanitizing JRP field..."
 
 def sanitize_jrp(jrp):
     jrp = jrp.replace("equal", "0")
-    
+
     if jrp == "0":
         return [0,0]
     elif "to" not in jrp:
@@ -124,7 +123,7 @@ pprint(peppers_data["heat"].value_counts(dropna=False), indent=4)
 print "\n\tSanitize malformed heat record..."
 malformed_heat_record = peppers_data[peppers_data["heat"] == ""]
 missing_heat = peppers_data[(peppers_data["heat"] != "") &
-                            (peppers_data["min_shu"] >= malformed_heat_record["min_shu"].values[0]) & 
+                            (peppers_data["min_shu"] >= malformed_heat_record["min_shu"].values[0]) &
                             (peppers_data["max_shu"] <= malformed_heat_record["max_shu"].values[0])]["heat"].unique()
 print "\t  Missing heat category:", missing_heat
 peppers_data["heat"] = peppers_data["heat"].apply(lambda x: x if x != "" else "Medium")
@@ -158,7 +157,7 @@ def sanitize_origin(origin):
         return "United States"
     elif origin not in ["N/A", "Unknown"]:
         return origin
-    
+
 peppers_data["origin"] = peppers_data["origin"].apply(sanitize_origin)
 print "\n\tAll origin values after sanitization:"
 pprint(peppers_data["origin"].sort_values().unique(), indent=6)
@@ -185,7 +184,7 @@ def add_region(origin):
         return "Middle East"
     elif pd.notnull(origin):
         return "Multi-Region"
-    
+
 peppers_data["region"] = peppers_data["origin"].apply(add_region)
 print "\tSample region values:"
 pprint(peppers_data[["origin", "region"]].drop_duplicates().sample(3).to_dict(orient="records"), indent=4)
@@ -201,4 +200,3 @@ print "\tSample JSON objects:"
 pprint(json_peppers_data.sample(3).to_json(orient='records'), indent=4)
 
 print "\n"
-
