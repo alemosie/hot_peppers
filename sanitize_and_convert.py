@@ -5,14 +5,9 @@ import json
 class SanitizePepperData():
     """From nested object containing raw, solely parsed pepper data,
     create a clean dataset for analysis"""
-    def __init__(self, pepper_data, write=False, output_path=None):
+    def __init__(self, pepper_data):
         self.raw = pd.DataFrame(pepper_data)
-
         self.clean = self.sanitize_pepper_data(self.raw.copy())
-
-        self.json = self.clean.to_dict(orient="records")
-        if write:
-            self.write_json(output_path=output_path)
 
     #### GENERAL FUNCTIONS
 
@@ -32,21 +27,6 @@ class SanitizePepperData():
 
     def sanitize_field(self, field, value_sanitization_function):
         return self.raw[field].apply(value_sanitization_function)
-
-    def write_json(self, output_path=None):
-        header_info = """{
-        "source": "https://www.pepperscale.com/hot-pepper-list/",
-        "contact": "https://github.com/alemosie",
-        "last_updated": "%s",
-        "peppers":
-        """ % (datetime.now())
-
-        json_file = "data/peppers_{}.json".format(str(datetime.now().date()).replace("-","")) if not output_path else output_path
-        print "Writing to %s..." % json_file
-        with open (json_file, "w") as json_file:
-            json_file.write(header_info)
-            json_file.write(self.clean.to_json(orient='records'))
-            json_file.write("}")
 
     #### FIELD FUNCTIONS
 

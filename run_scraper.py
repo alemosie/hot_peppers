@@ -26,7 +26,9 @@ class PepperScraper():
         }
         self.base_url = "https://www.pepperscale.com/hot-pepper-list/"
         self.ajax_url = "https://www.pepperscale.com/wp-admin/admin-ajax.php/"
-        self.data = self.scrape_page()
+        self.raw_data = self.scrape_page()
+        self.labeled_data = self.label_response_data(self.raw_data)
+        print "%d peppers fetched!" % len(self.labeled_data)
 
     def fetch_nonces(self):
         """Nonces are dynamically generated on a regular (daily?) basis, and need to be scraped from the
@@ -57,36 +59,29 @@ class PepperScraper():
             except:
                 pass
 
-pepper_scraper = PepperScraper()
-raw_pepper_data = pepper_scraper.data
+    def label_response_data(self, raw_data):
+        labels = ["name", "link", "min_shu", "max_shu", "heat", "jrp", "species", "origin"]
+        return [dict(zip(labels, entry)) for entry in raw_data]
 
-print "Response: %d entries" % len(raw_pepper_data)
+
+pepper_scraper = PepperScraper()
+
+print "Response: %d entries" % len(pepper_scraper.raw_data)
 print "First two entries:"
-pp(raw_pepper_data[:2], indent=4)
+pp(pepper_scraper.raw_data[:2], indent=4)
 
 
 print "\n\nData Shaping & Sanitization\n--------------------------------------------------\n"
 
 print "Labeling pepper entries..."
-INFO_LABELS = ["name", "link", "min_shu", "max_shu", "heat", "jrp", "species", "origin"]
-
-def label_response_data(entry):
-    labeled_entry = dict(zip(INFO_LABELS, entry))
-    return labeled_entry
-
-structured_pepper_data = [label_response_data(entry) for entry in raw_pepper_data]
-pp(structured_pepper_data[:2], indent=4)
 
 print "\nSanitizing data..."
-sanitized = Sanitizer(structured_pepper_data)
-sanitized_pepper_data = sanitized.clean
+sanitized = Sanitizer(pepper_scraper.labeled_data)
 
 print "\nResult (first two entries):"
-pp(sanitized_pepper_data.iloc[:2], indent=4)
+pp(sanitized.clean.iloc[:2], indent=4)
 
-
-write = sys.argv[1].split("=")[1]
-if write == "True":
+if len(sys.argv) > 1 and sys.argv[1] == "-w":
     print "\nJSON Conversion\n--------------------------------------------------\n"
     sanitized.write_json()
 
