@@ -8,13 +8,13 @@ import re
 from datetime import datetime
 import json
 from pprint import pprint as pp
+import sys
 
 print "\nData Fetching\n--------------------------------------------------\n"
 
-print "\nParsing raw, static HTML from PepperScale website..."
+print "Parsing raw, static HTML from PepperScale website..."
 with open("data/static_pepperscale_data.html", "r") as raw_html:
     pepper_html = BeautifulSoup(raw_html, 'html.parser')
-print "Done\n"
 
 
 print "\nData Extraction\n--------------------------------------------------\n"
@@ -40,7 +40,7 @@ print "\tFirst three peppers:"
 pp(all_peppers[:3], indent=4)
 
 
-print "\n\nData Sanitization\n--------------------------------------------------\n"
+print "\nData Sanitization\n--------------------------------------------------\n"
 
 print "\nSanitizing data..."
 sanitized = Sanitizer(all_peppers)
@@ -50,11 +50,14 @@ print "\nResult (first two entries):"
 pp(sanitized_pepper_data.iloc[:2], indent=4)
 
 
-print "\nJSON Conversion\n--------------------------------------------------\n"
+write = sys.argv[1].split("=")[1]
+if write == "True":
+    print "\nJSON Conversion\n--------------------------------------------------\n"
 
-sanitized.write_json()
+    sanitized.write_json()
 
-print "\nSample JSON objects:"
-pp(sanitized.json[:3], indent=4)
+    print "\nSample JSON objects:"
+    pp(sanitized.json[:3], indent=4)
 
-print "\n"
+
+print "\n\nDone!\n"

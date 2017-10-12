@@ -8,6 +8,7 @@ import json
 import urllib2
 import re
 from pprint import pprint as pp
+import sys
 
 
 print "\nData Fetching\n--------------------------------------------------\n"
@@ -84,8 +85,9 @@ print "\nResult (first two entries):"
 pp(sanitized_pepper_data.iloc[:2], indent=4)
 
 
-print "\n\nJSON Conversion\n--------------------------------------------------\n"
-
-sanitized.write_json()
+write = sys.argv[1].split("=")[1]
+if write == "True":
+    print "\nJSON Conversion\n--------------------------------------------------\n"
+    sanitized.write_json()
 
 print "\nDone!\n"
