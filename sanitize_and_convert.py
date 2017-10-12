@@ -82,7 +82,7 @@ class SanitizePepperData():
     def add_region_value(self, origin):
         if origin in ["Italy", "United Kingdom", "Spain", "Hungary", "France"]:
             return "Europe"
-        elif origin in ["United States", "Mexico"]:
+        elif origin in ["USA", "United States", "Mexico"]:
             return "North America"
         elif origin in ["Trinidad", "Caribbean", "Jamaica",  "Panama", "Costa Rica"]:
             return "Central America and the Caribbean"
