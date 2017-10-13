@@ -15,7 +15,7 @@ I grew up with very little spice in my diet -- my mother is Irish, what can I sa
 
 ### Background
 
-The data is from [PepperScale](https://www.pepperscale.com), a website that seems to be entirely dedicated to the topic of peppers. I have no affiliation with the site, but am grateful for their work! I specifically curated this dataset from their [Hot Pepper List](https://www.pepperscale.com/hot-pepper-list/).
+The base data is from [PepperScale](https://www.pepperscale.com), a website that seems to be entirely dedicated to the topic of peppers. I have no affiliation with the site, but am grateful for their work! I specifically curated this dataset from their [Hot Pepper List](https://www.pepperscale.com/hot-pepper-list/).
 
 Pepper hotness is based on the **Scoville Scale**, a measurement of the pungency of chili peppers running from mild to extreme. If you're interested in the scale -- along with its many pros and cons -- I recommend you read PepperScale's article on the subject [here](https://www.pepperscale.com/what-is-the-scoville-scale/), or trusty [Wikipedia](https://en.wikipedia.org/wiki/Scoville_scale).
 
@@ -40,11 +40,21 @@ Basis for min/max [Scoville heat units (SHU)](https://www.pepperscale.com/scovil
 
 Basis for min/max [Jalapeno Reference Point (JRP)](https://www.pepperscale.com/jalapeno-peppers/): The JRP is a subjective comparison of a pepper against a reference point most everyone has tried, resulting in a range of opinions. A negative number (like -50) means the amount of times the pepper is milder. A zero (0) means equal heat. Any positive numbers show the amount of times that the pepper is hotter than a jalapeño.
 
+### Future data to compare against/incorporate
+- https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale
+- http://ushotstuff.com/Heat.Scale.htm
+- https://www.cayennediane.com/the-scoville-scale/
+
 ### Helpful resources
 
+#### Technical
 - [How to Scrape an AJAX Website using Python](https://www.codementor.io/codementorteam/how-to-scrape-an-ajax-website-using-python-qw8fuitvi)
 - [Explanation of the "json": {"key":"value"} addition to the POST request (missing in the Requests documentation...?)](https://stackoverflow.com/questions/9733638/post-json-using-python-requests)
 - When my scraper broke the day after I built it, I learned about [nonces](https://codex.wordpress.org/WordPress_Nonces) in WordPress. I had to find a way to fetch the daily nonce to complete the AJAX request.
+
+#### Topical
+- FiveThirtyEight's article on [Rating Chili Peppers](https://fivethirtyeight.com/features/rating-chili-peppers-on-a-scale-of-1-to-oh-dear-god-im-on-fire/)
+- Guinness Book of World Records on the [Hottest Chili](http://www.guinnessworldrecords.com/world-records/hottest-chili)
 
 ## Sanitization/analysis to-do
 
