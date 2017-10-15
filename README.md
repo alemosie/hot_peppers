@@ -5,11 +5,12 @@ A fun side project exploring hot peppers!
 I grew up with very little spice in my diet -- my mother is Irish, what can I say? -- and get regularly mocked for my lack of spice tolerance. I figured that I'd do some research into these nuggets of suffering and glory so that the next time I am prompted to eat a pepper, I can distract my mocking friends enough to escape the actual act of pepper consumption.
 
 ## Technology & Skills
-- Web scraping (Requests, urllib2, nonces)
+- Web scraping (Requests, urllib, nonces)
 - HTML parsing (BeautifulSoup)
 - Data sanitization (Pandas)
 - Interactive viz (Plotly)
 - Scalability: static vs dynamic data fetching, modularization
+- Python 2 -> Python 3
 
 ## Data
 
@@ -45,14 +46,14 @@ Basis for min/max [Jalapeno Reference Point (JRP)](https://www.pepperscale.com/j
 - http://ushotstuff.com/Heat.Scale.htm
 - https://www.cayennediane.com/the-scoville-scale/
 
-### Helpful resources
+## Helpful resources
 
-#### Technical
+### Technical
 - [How to Scrape an AJAX Website using Python](https://www.codementor.io/codementorteam/how-to-scrape-an-ajax-website-using-python-qw8fuitvi)
 - [Explanation of the "json": {"key":"value"} addition to the POST request (missing in the Requests documentation...?)](https://stackoverflow.com/questions/9733638/post-json-using-python-requests)
 - When my scraper broke the day after I built it, I learned about [nonces](https://codex.wordpress.org/WordPress_Nonces) in WordPress. I had to find a way to fetch the daily nonce to complete the AJAX request.
 
-#### Topical
+### Topical
 - FiveThirtyEight's article on [Rating Chili Peppers](https://fivethirtyeight.com/features/rating-chili-peppers-on-a-scale-of-1-to-oh-dear-god-im-on-fire/)
 - Guinness Book of World Records on the [Hottest Chili](http://www.guinnessworldrecords.com/world-records/hottest-chili)
 

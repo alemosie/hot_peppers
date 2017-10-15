@@ -3,7 +3,7 @@ import requests
 import pandas as pd
 from datetime import datetime
 import json
-import urllib2
+import urllib.request # in Python2, it's urllib2
 import re
 from pprint import pprint as pp
 import sys
@@ -40,7 +40,7 @@ class FetchData():
 
         output_dir = "data" if not output_path else output_path
         json_file = "{}/peppers_{}.json".format(output_dir, str(datetime.now().date()).replace("-",""))
-        print "Writing to %s..." % json_file
+        print("Writing to %s..." % json_file)
         with open (json_file, "w") as json_file:
             json_file.write(header_info)
             json_file.write(self.data.to_json(orient='records'))
@@ -57,13 +57,17 @@ class PepperScraper():
         self.ajax_url = "https://www.pepperscale.com/wp-admin/admin-ajax.php/"
         self.raw_data = self.scrape_page()
         self.labeled_data = self.label_response_data(self.raw_data)
-        print "%d peppers fetched!" % len(self.labeled_data)
+        print("%d peppers fetched!" % len(self.labeled_data))
 
     def fetch_nonces(self):
         """Nonces are dynamically generated on a regular (daily?) basis, and need to be scraped from the
         <script> tags at the time of the scraping request"""
-        request = urllib2.Request(self.base_url, headers=self.headers)
-        page_html = urllib2.urlopen(request).read()
+        # Python2
+        # request = urllib2.Request(self.base_url, headers=self.headers)
+        # page_html = urllib2.urlopen(request).read()
+
+        request = urllib.request.Request(self.base_url, headers=self.headers)
+        page_html = urllib.request.urlopen(request).read().decode('utf-8')
         return re.findall('"nonce":"(\w+)"', page_html)
 
     def launch_ajax_request(self, nonce):
@@ -103,7 +107,7 @@ class StaticPepperParser():
             self.pepper_html = BeautifulSoup(raw_html, 'html.parser')
 
         raw_peppers = self.pepper_html.find_all("tr", re.compile("even|odd"))
-        print "%d peppers fetched!" % len(raw_peppers)
+        print("%d peppers fetched!" % len(self.labeled_data))
         return raw_peppers
 
     def label_html_data(self, row_tag):
@@ -115,14 +119,14 @@ class StaticPepperParser():
 
 if __name__ == '__main__':
 
-    print "\nFetch data\n--------------------------------------------------\n"
+    print("\nFetch data\n--------------------------------------------------\n")
 
     if len(sys.argv) == 1 or (len(sys.argv) == 2 and "-sc" in sys.argv):
-        print "Launching AJAX request to PepperScale...\n"
+        print("Launching AJAX request to PepperScale...\n")
         fetcher = FetchData()
 
     elif len(sys.argv) == 2 and "-st" in sys.argv:
-        print "Parsing raw, static HTML from PepperScale website...\n"
+        print("Parsing raw, static HTML from PepperScale website...\n")
         fetcher = FetchData(how="parse")
 
     elif len(sys.argv) > 1 and "-w" in sys.argv:
@@ -130,11 +134,11 @@ if __name__ == '__main__':
         output_path = path_arg[0] if len(path_arg) > 0 else None
 
         if "-st" in sys.argv:
-            print "Parsing raw, static HTML from PepperScale website...\n"
+            print("Parsing raw, static HTML from PepperScale website...\n")
             fetcher = FetchData(how="parse", write=True, output_path=output_path)
         else:
-            print "Launching AJAX request to PepperScale...\n"
+            print("Launching AJAX request to PepperScale...\n")
             fetcher = FetchData(write=True, output_path=output_path)
 
-    print "\nResults (first 2 entries):\n"
+    print("\nResults (first 2 entries):\n")
     pp(fetcher.json[:2])
