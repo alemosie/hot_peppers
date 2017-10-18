@@ -8,7 +8,6 @@ I grew up with very little spice in my diet -- my mother is Irish, what can I sa
 - Web scraping (Requests, urllib, nonces)
 - HTML parsing (BeautifulSoup)
 - Data sanitization (Pandas)
-- Interactive viz (Plotly)
 - Scalability: static vs dynamic data fetching, modularization
 - Python 2 -> Python 3
 
