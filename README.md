@@ -8,6 +8,7 @@ I grew up with very little spice in my diet -- my mother is Irish, what can I sa
 - Web scraping (Requests, urllib, nonces)
 - HTML parsing (BeautifulSoup)
 - Data sanitization (Pandas)
+- Regression analysis (scikit-learn)
 - Scalability: static vs dynamic data fetching, modularization
 - Python 2 -> Python 3
 
@@ -51,6 +52,8 @@ Basis for min/max [Jalapeno Reference Point (JRP)](https://www.pepperscale.com/j
 - [How to Scrape an AJAX Website using Python](https://www.codementor.io/codementorteam/how-to-scrape-an-ajax-website-using-python-qw8fuitvi)
 - [Explanation of the "json": {"key":"value"} addition to the POST request (missing in the Requests documentation...?)](https://stackoverflow.com/questions/9733638/post-json-using-python-requests)
 - When my scraper broke the day after I built it, I learned about [nonces](https://codex.wordpress.org/WordPress_Nonces) in WordPress. I had to find a way to fetch the daily nonce to complete the AJAX request.
+- scikit-learn's [description of linear models](http://scikit-learn.org/stable/modules/linear_model.html)
+- [How to handle outliers](http://www.theanalysisfactor.com/outliers-to-drop-or-not-to-drop/)
 
 ### Topical
 - FiveThirtyEight's article on [Rating Chili Peppers](https://fivethirtyeight.com/features/rating-chili-peppers-on-a-scale-of-1-to-oh-dear-god-im-on-fire/)
@@ -59,7 +62,8 @@ Basis for min/max [Jalapeno Reference Point (JRP)](https://www.pepperscale.com/j
 ## Sanitization/analysis to-do
 
 - Explore "heat" categorical. What are the cutoff scores for each category? Why is there no regular "hot?" Should there be?
+- Examine the two heat measurement scales: JRP & SHU. Do they follow the same pattern? Do they share outliers? Was there an equation used to derive the JRP (a PepperScale-specific metric) to the widely-used SHU?
+- Clean up malformed JRP and SHU scores; some SHU values correspond to different JRP values
 
-- Examine the two heat measurement scales: JRP & SHU. Do they follow the same distribution? Do they share outliers?
 
 ![Alt Text](https://media.giphy.com/media/3oriO5w4cPs5SECFmU/giphy.gif)

@@ -1,2 +1,3 @@
 .ipynb_checkpoints/
 *.pyc
+notebooks/reg_models_template.ipynb

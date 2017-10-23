@@ -14,23 +14,28 @@ from bs4 import BeautifulSoup
 
 class FetchData():
     """Fetch and write peppers data either through static HTML or AJAX POST request"""
-    def __init__(self, how="scrape", write=False, output_path=None):
-        """Load data through scraper (how="scrape") or static parser (how="parse")"""
-        if how == "scrape":
-            self.source = PepperScraper()
-        elif how == "parse":
-            self.source = StaticPepperParser()
-
+    def __init__(self, output_path=None):
         self.raw_data = self.source.raw_data
+        self.output_path = output_path
 
-        sanitizer = Sanitizer(self.source.labeled_data)
+    def sanitize_source_data(self, source):
+        sanitizer = Sanitizer(source.labeled_data)
         self.data = sanitizer.clean
         self.json = self.data.to_dict(orient="records")
 
-        if write:
-            self.write_json(output_path)
+    def run_scraper(self):
+        """Grab data through live AJAX request"""
+        scraper = PepperScraper()
+        self.source = scraper.run()
+        self.sanitize_source_data(self.source)
 
-    def write_json(self, output_path):
+    def run_parser(self):
+        """Parse data from static PepperScale HTML"""
+        parser = StaticPepperParser()
+        self.source = parser.run()
+        self.sanitize_source_data(self.source)
+
+    def write_json(self):
         header_info = """{
         "source": "https://www.pepperscale.com/hot-pepper-list/",
         "contact": "https://github.com/alemosie",
@@ -38,13 +43,14 @@ class FetchData():
         "peppers":
         """ % (datetime.now())
 
-        output_dir = "data" if not output_path else output_path
+        output_dir = "data" if not self.output_path else self.output_path
         json_file = "{}/peppers_{}.json".format(output_dir, str(datetime.now().date()).replace("-",""))
         print("Writing to %s..." % json_file)
         with open (json_file, "w") as json_file:
             json_file.write(header_info)
             json_file.write(self.data.to_json(orient='records'))
             json_file.write("}")
+
 
 
 class PepperScraper():
@@ -55,9 +61,6 @@ class PepperScraper():
         }
         self.base_url = "https://www.pepperscale.com/hot-pepper-list/"
         self.ajax_url = "https://www.pepperscale.com/wp-admin/admin-ajax.php/"
-        self.raw_data = self.scrape_page()
-        self.labeled_data = self.label_response_data(self.raw_data)
-        print("%d peppers fetched!" % len(self.labeled_data))
 
     def fetch_nonces(self):
         """Nonces are dynamically generated on a regular (daily?) basis, and need to be scraped from the
@@ -96,14 +99,19 @@ class PepperScraper():
         labels = ["name", "link", "min_shu", "max_shu", "heat", "jrp", "species", "origin"]
         return [dict(zip(labels, entry)) for entry in raw_data]
 
+    def run(self):
+        self.raw_data = self.scrape_page()
+        self.labeled_data = self.label_response_data(self.raw_data)
+        print("%d peppers fetched!" % len(self.labeled_data))
+
+
 class StaticPepperParser():
     """Parse data from static PepperScale.com HTML, procured on 11 Oct, 2017"""
-    def __init__(self):
-        self.raw_data = self.fetch_raw_pepper_html()
-        self.labeled_data = [self.label_html_data(pepper_row) for pepper_row in self.raw_data]
+    def __init__(self, html_path="data/static_pepperscale_data.html"):
+        self.html_path = html_path
 
     def fetch_raw_pepper_html(self):
-        with open("data/static_pepperscale_data.html", "r") as raw_html:
+        with open(self.html_path, "r") as raw_html:
             self.pepper_html = BeautifulSoup(raw_html, 'html.parser')
 
         raw_peppers = self.pepper_html.find_all("tr", re.compile("even|odd"))
@@ -116,6 +124,11 @@ class StaticPepperParser():
         link = str(row_tag.find("a"))
         return dict(zip(labels, pepper_info + [link]))
 
+    def run(self):
+        self.raw_data = self.fetch_raw_pepper_html()
+        self.labeled_data = [self.label_html_data(pepper_row) for pepper_row in self.raw_data]
+        print("%d peppers parsed!" % len(self.labeled_data))
+
 
 if __name__ == '__main__':
 
@@ -124,21 +137,26 @@ if __name__ == '__main__':
     if len(sys.argv) == 1 or (len(sys.argv) == 2 and "-sc" in sys.argv):
         print("Launching AJAX request to PepperScale...\n")
         fetcher = FetchData()
+        fetcher.run_scraper()
 
     elif len(sys.argv) == 2 and "-st" in sys.argv:
         print("Parsing raw, static HTML from PepperScale website...\n")
-        fetcher = FetchData(how="parse")
+        fetcher = FetchData()
+        fetcher.run_parser()
 
     elif len(sys.argv) > 1 and "-w" in sys.argv:
         path_arg = [arg for arg in sys.argv[1:] if os.path.isdir(arg)]
         output_path = path_arg[0] if len(path_arg) > 0 else None
+        fetcher = FetchData(output_path=output_path)
 
         if "-st" in sys.argv:
-            print("Parsing raw, static HTML from PepperScale website...\n")
-            fetcher = FetchData(how="parse", write=True, output_path=output_path)
+            print("Parsing raw, static HTML from PepperScale website and writing output...\n")
+            fetcher.run_parser()
+            fetcher.write_json()
         else:
-            print("Launching AJAX request to PepperScale...\n")
-            fetcher = FetchData(write=True, output_path=output_path)
+            print("Launching AJAX request to PepperScale and writing output...\n")
+            fetcher.run_scraper()
+            fetcher.write_json()
 
     print("\nResults (first 2 entries):\n")
     pp(fetcher.json[:2])
