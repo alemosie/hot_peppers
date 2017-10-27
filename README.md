@@ -7,10 +7,9 @@ I grew up with very little spice in my diet -- my mother is Irish, what can I sa
 ## Technology & Skills
 - Web scraping (Requests, urllib, nonces)
 - HTML parsing (BeautifulSoup)
-- Data sanitization (Pandas)
+- Data sanitization (Pandas, fuzzywuzzy, regex)
 - Regression analysis (scikit-learn)
 - Scalability: static vs dynamic data fetching, modularization
-- Python 2 -> Python 3
 
 ## Data
 
@@ -62,7 +61,7 @@ Basis for min/max [Jalapeno Reference Point (JRP)](https://www.pepperscale.com/j
 ## Sanitization/analysis to-do
 
 - Explore "heat" categorical. What are the cutoff scores for each category? Why is there no regular "hot?" Should there be?
-- Examine the two heat measurement scales: JRP & SHU. Do they follow the same pattern? Do they share outliers? Was there an equation used to derive the JRP (a PepperScale-specific metric) to the widely-used SHU?
+- ~~Examine the two heat measurement scales: JRP & SHU. Do they follow the same pattern? Do they share outliers? What transformation was applied to the widely-used SHU to get the JRP (a PepperScale-specific metric)?~~
 - Clean up malformed JRP and SHU scores; some SHU values correspond to different JRP values
 
 
