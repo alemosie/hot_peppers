@@ -1,7 +1,7 @@
 {
   "source": "https://www.pepperscale.com/hot-pepper-list/",
   "contact": "https://github.com/alemosie",
-  "last_updated": "2017-10-13 00:07:29.481860",
+  "last_updated": "2017-10-28 14:34:12.765731",
   "peppers": [
     {
       "name": "Bell Pepper",
@@ -13,7 +13,8 @@
       "max_shu": 0,
       "min_jrp": -8000,
       "max_jrp": -2500,
-      "link": "http://www.pepperscale.com/bell-pepper"
+      "link": "http://www.pepperscale.com/bell-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Gypsy Pepper",
@@ -25,7 +26,8 @@
       "max_shu": 0,
       "min_jrp": -8000,
       "max_jrp": -2500,
-      "link": "http://www.pepperscale.com/gypsy-pepper"
+      "link": "http://www.pepperscale.com/gypsy-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Purple Beauty Pepper",
@@ -37,7 +39,8 @@
       "max_shu": 0,
       "min_jrp": -8000,
       "max_jrp": -2500,
-      "link": "http://www.pepperscale.com/purple-beauty-pepper"
+      "link": "http://www.pepperscale.com/purple-beauty-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Melrose Pepper",
@@ -49,7 +52,8 @@
       "max_shu": 0,
       "min_jrp": -8000,
       "max_jrp": -2500,
-      "link": "http://www.pepperscale.com/melrose-pepper"
+      "link": "http://www.pepperscale.com/melrose-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Banana Pepper ",
@@ -61,7 +65,8 @@
       "max_shu": 500,
       "min_jrp": -8000,
       "max_jrp": -5,
-      "link": "http://www.pepperscale.com/banana-pepper"
+      "link": "http://www.pepperscale.com/banana-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Trinidad Perfume",
@@ -73,7 +78,8 @@
       "max_shu": 500,
       "min_jrp": -8000,
       "max_jrp": -5,
-      "link": "http://www.pepperscale.com/trinidad-perfume/"
+      "link": "http://www.pepperscale.com/trinidad-perfume/",
+      "source_name": "PepperScale"
     },
     {
       "name": "Aji Dulce",
@@ -85,7 +91,8 @@
       "max_shu": 1000,
       "min_jrp": -8000,
       "max_jrp": -3,
-      "link": "http://www.pepperscale.com/aji-dulce/"
+      "link": "http://www.pepperscale.com/aji-dulce/",
+      "source_name": "PepperScale"
     },
     {
       "name": "Peperone Di Senise",
@@ -97,7 +104,8 @@
       "max_shu": 0,
       "min_jrp": -8000,
       "max_jrp": 2500,
-      "link": "http://www.pepperscale.com/peperone-di-senise/"
+      "link": "http://www.pepperscale.com/peperone-di-senise/",
+      "source_name": "PepperScale"
     },
     {
       "name": "Tangerine Dream Pepper",
@@ -109,7 +117,8 @@
       "max_shu": 100,
       "min_jrp": -8000,
       "max_jrp": -250,
-      "link": "https://www.pepperscale.com/tangerine-dream-pepper/"
+      "link": "https://www.pepperscale.com/tangerine-dream-pepper/",
+      "source_name": "PepperScale"
     },
     {
       "name": "California Wonder Pepper",
@@ -121,7 +130,8 @@
       "max_shu": 0,
       "min_jrp": -2500,
       "max_jrp": -8000,
-      "link": "https://www.pepperscale.com/california-wonder-pepper/"
+      "link": "https://www.pepperscale.com/california-wonder-pepper/",
+      "source_name": "PepperScale"
     },
     {
       "name": "Carmen Pepper",
@@ -133,7 +143,8 @@
       "max_shu": 0,
       "min_jrp": -2500,
       "max_jrp": -8000,
-      "link": "https://www.pepperscale.com/carmen-pepper/"
+      "link": "https://www.pepperscale.com/carmen-pepper/",
+      "source_name": "PepperScale"
     },
     {
       "name": "Medusa Pepper",
@@ -145,7 +156,8 @@
       "max_shu": 1000,
       "min_jrp": -8000,
       "max_jrp": -3,
-      "link": "http://www.pepperscale.com/medusa-pepper"
+      "link": "http://www.pepperscale.com/medusa-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Chilly Chili",
@@ -157,7 +169,8 @@
       "max_shu": 1000,
       "min_jrp": -8000,
       "max_jrp": -2,
-      "link": "https://www.pepperscale.com/chilly-chili/"
+      "link": "https://www.pepperscale.com/chilly-chili/",
+      "source_name": "PepperScale"
     },
     {
       "name": "Shishito Pepper",
@@ -169,7 +182,8 @@
       "max_shu": 200,
       "min_jrp": -160,
       "max_jrp": -13,
-      "link": "http://www.pepperscale.com/shishito-pepper"
+      "link": "http://www.pepperscale.com/shishito-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Pepperoncini",
@@ -181,7 +195,8 @@
       "max_shu": 500,
       "min_jrp": -80,
       "max_jrp": -5,
-      "link": "http://www.pepperscale.com/pepperoncini"
+      "link": "http://www.pepperscale.com/pepperoncini",
+      "source_name": "PepperScale"
     },
     {
       "name": "Pimento Pepper",
@@ -193,7 +208,8 @@
       "max_shu": 500,
       "min_jrp": -80,
       "max_jrp": -5,
-      "link": "http://www.pepperscale.com/pimento-pepper"
+      "link": "http://www.pepperscale.com/pimento-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Italian Long Hot Pepper",
@@ -205,7 +221,8 @@
       "max_shu": 1000,
       "min_jrp": -80,
       "max_jrp": -3,
-      "link": "http://www.pepperscale.com/italian-long-hot-peppers"
+      "link": "http://www.pepperscale.com/italian-long-hot-peppers",
+      "source_name": "PepperScale"
     },
     {
       "name": "Cubanelle Pepper",
@@ -217,7 +234,8 @@
       "max_shu": 1000,
       "min_jrp": -80,
       "max_jrp": -3,
-      "link": "http://www.pepperscale.com/cubanelle-pepper"
+      "link": "http://www.pepperscale.com/cubanelle-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Mexibell Pepper",
@@ -229,7 +247,8 @@
       "max_shu": 1000,
       "min_jrp": -3,
       "max_jrp": -80,
-      "link": "https://www.pepperscale.com/mexibell-pepper/"
+      "link": "https://www.pepperscale.com/mexibell-pepper/",
+      "source_name": "PepperScale"
     },
     {
       "name": "Piquillo Peppers",
@@ -241,7 +260,8 @@
       "max_shu": 1000,
       "min_jrp": -16,
       "max_jrp": -3,
-      "link": "http://www.pepperscale.com/piquillo-peppers"
+      "link": "http://www.pepperscale.com/piquillo-peppers",
+      "source_name": "PepperScale"
     },
     {
       "name": "Beaver Dam Pepper",
@@ -253,7 +273,8 @@
       "max_shu": 1000,
       "min_jrp": -16,
       "max_jrp": -3,
-      "link": "http://www.pepperscale.com/beaver-dam-pepper"
+      "link": "http://www.pepperscale.com/beaver-dam-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Padrón Pepper",
@@ -265,7 +286,8 @@
       "max_shu": 2500,
       "min_jrp": -16,
       "max_jrp": 0,
-      "link": "http://www.pepperscale.com/padron-pepper"
+      "link": "http://www.pepperscale.com/padron-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Espelette Pepper",
@@ -277,7 +299,8 @@
       "max_shu": 4000,
       "min_jrp": -16,
       "max_jrp": 0,
-      "link": "http://www.pepperscale.com/espelette-pepper"
+      "link": "http://www.pepperscale.com/espelette-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Anaheim Pepper",
@@ -289,7 +312,8 @@
       "max_shu": 2500,
       "min_jrp": -16,
       "max_jrp": 0,
-      "link": "http://www.pepperscale.com/anaheim-pepper"
+      "link": "http://www.pepperscale.com/anaheim-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Santa Fe Grande Pepper",
@@ -301,7 +325,8 @@
       "max_shu": 700,
       "min_jrp": -3,
       "max_jrp": -16,
-      "link": "https://www.pepperscale.com/santa-fe-grande-pepper/"
+      "link": "https://www.pepperscale.com/santa-fe-grande-pepper/",
+      "source_name": "PepperScale"
     },
     {
       "name": "Cajun Belle Pepper",
@@ -313,7 +338,8 @@
       "max_shu": 4000,
       "min_jrp": -5,
       "max_jrp": 0,
-      "link": "https://www.pepperscale.com/cajun-belle-pepper/"
+      "link": "https://www.pepperscale.com/cajun-belle-pepper/",
+      "source_name": "PepperScale"
     },
     {
       "name": "Holy Mole Pepper",
@@ -325,7 +351,8 @@
       "max_shu": 800,
       "min_jrp": -10,
       "max_jrp": -3,
-      "link": "http://www.pepperscale.com/holy-mole-pepper"
+      "link": "http://www.pepperscale.com/holy-mole-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Aji Panca",
@@ -337,7 +364,8 @@
       "max_shu": 1500,
       "min_jrp": -8,
       "max_jrp": -2,
-      "link": "http://www.pepperscale.com/aji-panca"
+      "link": "http://www.pepperscale.com/aji-panca",
+      "source_name": "PepperScale"
     },
     {
       "name": "Ancho Pepper",
@@ -349,7 +377,8 @@
       "max_shu": 1500,
       "min_jrp": -8,
       "max_jrp": -2,
-      "link": "http://www.pepperscale.com/ancho-pepper"
+      "link": "http://www.pepperscale.com/ancho-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Poblano Pepper",
@@ -361,7 +390,8 @@
       "max_shu": 1500,
       "min_jrp": -8,
       "max_jrp": -2,
-      "link": "http://www.pepperscale.com/poblano-peppers"
+      "link": "http://www.pepperscale.com/poblano-peppers",
+      "source_name": "PepperScale"
     },
     {
       "name": "Guindilla Pepper",
@@ -373,7 +403,8 @@
       "max_shu": 2000,
       "min_jrp": -8,
       "max_jrp": 0,
-      "link": "http://www.pepperscale.com/guindilla-pepper"
+      "link": "http://www.pepperscale.com/guindilla-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Chilaca Pepper",
@@ -385,7 +416,8 @@
       "max_shu": 2500,
       "min_jrp": -8,
       "max_jrp": 0,
-      "link": "http://www.pepperscale.com/chilaca-pepper"
+      "link": "http://www.pepperscale.com/chilaca-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Pasilla Pepper",
@@ -397,7 +429,8 @@
       "max_shu": 2500,
       "min_jrp": -8,
       "max_jrp": 0,
-      "link": "http://www.pepperscale.com/pasilla-pepper"
+      "link": "http://www.pepperscale.com/pasilla-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Cascabel Pepper",
@@ -409,7 +442,8 @@
       "max_shu": 3000,
       "min_jrp": -8,
       "max_jrp": 0,
-      "link": "http://www.pepperscale.com/cascabel-pepper"
+      "link": "http://www.pepperscale.com/cascabel-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Hatch Peppers",
@@ -421,7 +455,8 @@
       "max_shu": 8000,
       "min_jrp": -3,
       "max_jrp": 0,
-      "link": "http://www.pepperscale.com/hatch-peppers"
+      "link": "http://www.pepperscale.com/hatch-peppers",
+      "source_name": "PepperScale"
     },
     {
       "name": "NuMex Centennial",
@@ -433,7 +468,8 @@
       "max_shu": 5000,
       "min_jrp": -5,
       "max_jrp": 0,
-      "link": "http://www.pepperscale.com/numex-centennial/"
+      "link": "http://www.pepperscale.com/numex-centennial/",
+      "source_name": "PepperScale"
     },
     {
       "name": "Kashmiri Chili",
@@ -445,7 +481,8 @@
       "max_shu": 2000,
       "min_jrp": -8,
       "max_jrp": 0,
-      "link": "https://www.pepperscale.com/kashmiri-chili/"
+      "link": "https://www.pepperscale.com/kashmiri-chili/",
+      "source_name": "PepperScale"
     },
     {
       "name": "Peppadew Pepper",
@@ -457,7 +494,8 @@
       "max_shu": 1200,
       "min_jrp": -7,
       "max_jrp": -2,
-      "link": "http://www.pepperscale.com/peppadew-pepper"
+      "link": "http://www.pepperscale.com/peppadew-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Rocotillo Pepper",
@@ -469,7 +507,8 @@
       "max_shu": 2500,
       "min_jrp": -5,
       "max_jrp": 0,
-      "link": "http://www.pepperscale.com/rocotillo-pepper"
+      "link": "http://www.pepperscale.com/rocotillo-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Mulato Pepper",
@@ -481,7 +520,8 @@
       "max_shu": 3000,
       "min_jrp": -3,
       "max_jrp": 0,
-      "link": "http://www.pepperscale.com/mulato-pepper"
+      "link": "http://www.pepperscale.com/mulato-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Cherry Bomb Pepper",
@@ -493,7 +533,8 @@
       "max_shu": 5000,
       "min_jrp": 0,
       "max_jrp": 0,
-      "link": "http://www.pepperscale.com/cherry-bomb-pepper"
+      "link": "http://www.pepperscale.com/cherry-bomb-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Cowhorn Pepper",
@@ -505,7 +546,8 @@
       "max_shu": 5000,
       "min_jrp": 0,
       "max_jrp": 0,
-      "link": "http://www.pepperscale.com/cowhorn-pepper"
+      "link": "http://www.pepperscale.com/cowhorn-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Guajillo Pepper",
@@ -517,7 +559,8 @@
       "max_shu": 5000,
       "min_jrp": 0,
       "max_jrp": 0,
-      "link": "http://www.pepperscale.com/guajillo-pepper"
+      "link": "http://www.pepperscale.com/guajillo-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Jalapeño Pepper",
@@ -529,7 +572,8 @@
       "max_shu": 8000,
       "min_jrp": 0,
       "max_jrp": 0,
-      "link": "http://www.pepperscale.com/jalapeno-peppers"
+      "link": "http://www.pepperscale.com/jalapeno-peppers",
+      "source_name": "PepperScale"
     },
     {
       "name": "Purple Jalapeño Pepper",
@@ -541,7 +585,8 @@
       "max_shu": 8000,
       "min_jrp": 0,
       "max_jrp": 0,
-      "link": "http://www.pepperscale.com/purple-jalapeno-pepper"
+      "link": "http://www.pepperscale.com/purple-jalapeno-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Chipotle Pepper",
@@ -553,7 +598,8 @@
       "max_shu": 8000,
       "min_jrp": 0,
       "max_jrp": 0,
-      "link": "http://www.pepperscale.com/chipotle-pepper"
+      "link": "http://www.pepperscale.com/chipotle-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Fresno Pepper",
@@ -565,7 +611,8 @@
       "max_shu": 10000,
       "min_jrp": 0,
       "max_jrp": 0,
-      "link": "http://www.pepperscale.com/fresno-pepper"
+      "link": "http://www.pepperscale.com/fresno-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Chimayo Pepper",
@@ -577,7 +624,8 @@
       "max_shu": 6000,
       "min_jrp": 0,
       "max_jrp": 0,
-      "link": "http://www.pepperscale.com/chimayo-pepper"
+      "link": "http://www.pepperscale.com/chimayo-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Sandia Pepper",
@@ -589,7 +637,8 @@
       "max_shu": 7000,
       "min_jrp": 0,
       "max_jrp": 0,
-      "link": "http://www.pepperscale.com/sandia-pepper"
+      "link": "http://www.pepperscale.com/sandia-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Puya Pepper",
@@ -601,7 +650,8 @@
       "max_shu": 8000,
       "min_jrp": 0,
       "max_jrp": 0,
-      "link": "http://www.pepperscale.com/puya-pepper"
+      "link": "http://www.pepperscale.com/puya-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Hungarian Wax Pepper",
@@ -613,7 +663,8 @@
       "max_shu": 10000,
       "min_jrp": 0,
       "max_jrp": 4,
-      "link": "http://www.pepperscale.com/hungarian-wax-pepper"
+      "link": "http://www.pepperscale.com/hungarian-wax-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Black Hungarian Pepper",
@@ -625,7 +676,8 @@
       "max_shu": 10000,
       "min_jrp": 0,
       "max_jrp": 4,
-      "link": "http://www.pepperscale.com/black-hungarian-pepper"
+      "link": "http://www.pepperscale.com/black-hungarian-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Bishop&#039;s Crown Pepper",
@@ -637,7 +689,8 @@
       "max_shu": 30000,
       "min_jrp": 0,
       "max_jrp": 12,
-      "link": "http://www.pepperscale.com/bishops-crown-pepper"
+      "link": "http://www.pepperscale.com/bishops-crown-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Bulgarian Carrot Pepper",
@@ -649,7 +702,8 @@
       "max_shu": 30000,
       "min_jrp": 0,
       "max_jrp": 12,
-      "link": "http://www.pepperscale.com/bulgarian-carrot-pepper"
+      "link": "http://www.pepperscale.com/bulgarian-carrot-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Fish Pepper",
@@ -661,7 +715,8 @@
       "max_shu": 30000,
       "min_jrp": 0,
       "max_jrp": 12,
-      "link": "http://www.pepperscale.com/fish-pepper"
+      "link": "http://www.pepperscale.com/fish-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Hinkelhatz Pepper",
@@ -673,7 +728,8 @@
       "max_shu": 30000,
       "min_jrp": 0,
       "max_jrp": 16,
-      "link": "https://www.pepperscale.com/hinkelhatz-pepper/"
+      "link": "https://www.pepperscale.com/hinkelhatz-pepper/",
+      "source_name": "PepperScale"
     },
     {
       "name": "Aleppo Pepper",
@@ -685,7 +741,8 @@
       "max_shu": 10000,
       "min_jrp": 0,
       "max_jrp": 4,
-      "link": "http://www.pepperscale.com/aleppo-pepper"
+      "link": "http://www.pepperscale.com/aleppo-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Peter Pepper",
@@ -697,7 +754,8 @@
       "max_shu": 23000,
       "min_jrp": 0,
       "max_jrp": 9,
-      "link": "http://www.pepperscale.com/peter-pepper"
+      "link": "http://www.pepperscale.com/peter-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Serrano Pepper",
@@ -709,7 +767,8 @@
       "max_shu": 23000,
       "min_jrp": 0,
       "max_jrp": 9,
-      "link": "http://www.pepperscale.com/serrano-peppers"
+      "link": "http://www.pepperscale.com/serrano-peppers",
+      "source_name": "PepperScale"
     },
     {
       "name": "Sport Peppers",
@@ -721,7 +780,8 @@
       "max_shu": 23000,
       "min_jrp": 0,
       "max_jrp": 9,
-      "link": "http://www.pepperscale.com/sport-peppers"
+      "link": "http://www.pepperscale.com/sport-peppers",
+      "source_name": "PepperScale"
     },
     {
       "name": "Bolivian Rainbow Pepper",
@@ -733,7 +793,8 @@
       "max_shu": 30000,
       "min_jrp": 4,
       "max_jrp": 12,
-      "link": "http://www.pepperscale.com/bolivian-rainbow-pepper"
+      "link": "http://www.pepperscale.com/bolivian-rainbow-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Black Pearl Pepper",
@@ -745,7 +806,8 @@
       "max_shu": 30000,
       "min_jrp": 4,
       "max_jrp": 12,
-      "link": "http://www.pepperscale.com/black-pearl-pepper"
+      "link": "http://www.pepperscale.com/black-pearl-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Manzano Pepper",
@@ -757,7 +819,8 @@
       "max_shu": 30000,
       "min_jrp": 2,
       "max_jrp": 12,
-      "link": "http://www.pepperscale.com/manzano-pepper"
+      "link": "http://www.pepperscale.com/manzano-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Japones Pepper",
@@ -769,7 +832,8 @@
       "max_shu": 30000,
       "min_jrp": 2,
       "max_jrp": 12,
-      "link": "http://www.pepperscale.com/japones-pepper"
+      "link": "http://www.pepperscale.com/japones-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Lemon Drop Pepper",
@@ -781,7 +845,8 @@
       "max_shu": 30000,
       "min_jrp": 2,
       "max_jrp": 12,
-      "link": "http://www.pepperscale.com/lemon-drop-pepper"
+      "link": "http://www.pepperscale.com/lemon-drop-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Chile De Àrbol",
@@ -793,7 +858,8 @@
       "max_shu": 30000,
       "min_jrp": 2,
       "max_jrp": 12,
-      "link": "http://www.pepperscale.com/chile-de-arbol"
+      "link": "http://www.pepperscale.com/chile-de-arbol",
+      "source_name": "PepperScale"
     },
     {
       "name": "Black Cobra Pepper",
@@ -805,7 +871,8 @@
       "max_shu": 40000,
       "min_jrp": 3,
       "max_jrp": 16,
-      "link": "http://www.pepperscale.com/black-cobra-pepper"
+      "link": "http://www.pepperscale.com/black-cobra-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Jwala Pepper",
@@ -817,7 +884,8 @@
       "max_shu": 30000,
       "min_jrp": 3,
       "max_jrp": 12,
-      "link": "http://www.pepperscale.com/jwala-pepper"
+      "link": "http://www.pepperscale.com/jwala-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "NuMex Twilight",
@@ -829,7 +897,8 @@
       "max_shu": 50000,
       "min_jrp": 4,
       "max_jrp": 20,
-      "link": "http://www.pepperscale.com/numex-twilight"
+      "link": "http://www.pepperscale.com/numex-twilight",
+      "source_name": "PepperScale"
     },
     {
       "name": "Aji Amarillo",
@@ -841,7 +910,8 @@
       "max_shu": 50000,
       "min_jrp": 4,
       "max_jrp": 20,
-      "link": "http://www.pepperscale.com/aji-amarillo"
+      "link": "http://www.pepperscale.com/aji-amarillo",
+      "source_name": "PepperScale"
     },
     {
       "name": "Aji Charapita",
@@ -853,7 +923,8 @@
       "max_shu": 50000,
       "min_jrp": 4,
       "max_jrp": 20,
-      "link": "http://www.pepperscale.com/aji-charapita"
+      "link": "http://www.pepperscale.com/aji-charapita",
+      "source_name": "PepperScale"
     },
     {
       "name": "Aji Omnicolor",
@@ -865,7 +936,8 @@
       "max_shu": 50000,
       "min_jrp": 4,
       "max_jrp": 20,
-      "link": "http://www.pepperscale.com/aji-omnicolor"
+      "link": "http://www.pepperscale.com/aji-omnicolor",
+      "source_name": "PepperScale"
     },
     {
       "name": "Tabasco Pepper",
@@ -877,7 +949,8 @@
       "max_shu": 50000,
       "min_jrp": 4,
       "max_jrp": 20,
-      "link": "http://www.pepperscale.com/tabasco-pepper"
+      "link": "http://www.pepperscale.com/tabasco-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Cayenne Pepper",
@@ -889,7 +962,8 @@
       "max_shu": 50000,
       "min_jrp": 4,
       "max_jrp": 20,
-      "link": "http://www.pepperscale.com/cayenne-pepper"
+      "link": "http://www.pepperscale.com/cayenne-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Rocoto Pepper",
@@ -901,7 +975,8 @@
       "max_shu": 100000,
       "min_jrp": 4,
       "max_jrp": 40,
-      "link": "http://www.pepperscale.com/rocoto-pepper"
+      "link": "http://www.pepperscale.com/rocoto-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Rooster Spur Pepper",
@@ -913,7 +988,8 @@
       "max_shu": 50000,
       "min_jrp": 4,
       "max_jrp": 20,
-      "link": "https://www.pepperscale.com/rooster-spur-pepper/"
+      "link": "https://www.pepperscale.com/rooster-spur-pepper/",
+      "source_name": "PepperScale"
     },
     {
       "name": "Super Chili Pepper",
@@ -925,7 +1001,8 @@
       "max_shu": 50000,
       "min_jrp": 5,
       "max_jrp": 20,
-      "link": "http://www.pepperscale.com/super-chili-pepper"
+      "link": "http://www.pepperscale.com/super-chili-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Pequin Pepper",
@@ -937,7 +1014,8 @@
       "max_shu": 60000,
       "min_jrp": 5,
       "max_jrp": 24,
-      "link": "http://www.pepperscale.com/pequin-pepper"
+      "link": "http://www.pepperscale.com/pequin-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Tien Tsin Pepper",
@@ -949,7 +1027,8 @@
       "max_shu": 75000,
       "min_jrp": 6,
       "max_jrp": 30,
-      "link": "http://www.pepperscale.com/tien-tsin-pepper"
+      "link": "http://www.pepperscale.com/tien-tsin-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Malagueta Pepper",
@@ -961,7 +1040,8 @@
       "max_shu": 100000,
       "min_jrp": 6,
       "max_jrp": 40,
-      "link": "http://www.pepperscale.com/malagueta-pepper"
+      "link": "http://www.pepperscale.com/malagueta-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Chiltepin Pepper",
@@ -973,7 +1053,8 @@
       "max_shu": 100000,
       "min_jrp": 6,
       "max_jrp": 40,
-      "link": "http://www.pepperscale.com/chiltepin-pepper"
+      "link": "http://www.pepperscale.com/chiltepin-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Thai Pepper",
@@ -985,7 +1066,8 @@
       "max_shu": 100000,
       "min_jrp": 6,
       "max_jrp": 40,
-      "link": "http://www.pepperscale.com/thai-peppers"
+      "link": "http://www.pepperscale.com/thai-peppers",
+      "source_name": "PepperScale"
     },
     {
       "name": "Byadgi Chili",
@@ -997,7 +1079,8 @@
       "max_shu": 100000,
       "min_jrp": 6,
       "max_jrp": 40,
-      "link": "https://www.pepperscale.com/byadgi-chili/"
+      "link": "https://www.pepperscale.com/byadgi-chili/",
+      "source_name": "PepperScale"
     },
     {
       "name": "Dundicut Pepper",
@@ -1009,7 +1092,8 @@
       "max_shu": 65000,
       "min_jrp": 7,
       "max_jrp": 26,
-      "link": "http://www.pepperscale.com/dundicut-pepper/"
+      "link": "http://www.pepperscale.com/dundicut-pepper/",
+      "source_name": "PepperScale"
     },
     {
       "name": "Cheiro Roxa",
@@ -1021,7 +1105,8 @@
       "max_shu": 80000,
       "min_jrp": 8,
       "max_jrp": 32,
-      "link": "https://www.pepperscale.com/cheiro-roxa/"
+      "link": "https://www.pepperscale.com/cheiro-roxa/",
+      "source_name": "PepperScale"
     },
     {
       "name": "Prairie Fire Pepper",
@@ -1033,7 +1118,8 @@
       "max_shu": 80000,
       "min_jrp": 9,
       "max_jrp": 32,
-      "link": "http://www.pepperscale.com/prairie-fire-pepper"
+      "link": "http://www.pepperscale.com/prairie-fire-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Charleston Hot Pepper",
@@ -1045,7 +1131,8 @@
       "max_shu": 100000,
       "min_jrp": 9,
       "max_jrp": 40,
-      "link": "http://www.pepperscale.com/charleston-hot-pepper"
+      "link": "http://www.pepperscale.com/charleston-hot-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Siling Labuyo",
@@ -1057,7 +1144,8 @@
       "max_shu": 100000,
       "min_jrp": 10,
       "max_jrp": 40,
-      "link": "https://www.pepperscale.com/siling-labuyo/"
+      "link": "https://www.pepperscale.com/siling-labuyo/",
+      "source_name": "PepperScale"
     },
     {
       "name": "Datil Pepper",
@@ -1069,7 +1157,8 @@
       "max_shu": 300000,
       "min_jrp": 12,
       "max_jrp": 120,
-      "link": "http://www.pepperscale.com/datil-pepper"
+      "link": "http://www.pepperscale.com/datil-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Wiri Wiri Pepper",
@@ -1081,7 +1170,8 @@
       "max_shu": 350000,
       "min_jrp": 12,
       "max_jrp": 140,
-      "link": "http://www.pepperscale.com/wiri-wiri-pepper"
+      "link": "http://www.pepperscale.com/wiri-wiri-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Scotch Bonnet Pepper",
@@ -1093,7 +1183,8 @@
       "max_shu": 350000,
       "min_jrp": 12,
       "max_jrp": 140,
-      "link": "http://www.pepperscale.com/scotch-bonnet-pepper"
+      "link": "http://www.pepperscale.com/scotch-bonnet-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Habanero Pepper",
@@ -1105,7 +1196,8 @@
       "max_shu": 350000,
       "min_jrp": 12,
       "max_jrp": 140,
-      "link": "http://www.pepperscale.com/habanero-pepper"
+      "link": "http://www.pepperscale.com/habanero-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Peruvian White Habanero",
@@ -1117,7 +1209,8 @@
       "max_shu": 350000,
       "min_jrp": 12,
       "max_jrp": 140,
-      "link": "http://www.pepperscale.com/peruvian-white-habanero"
+      "link": "http://www.pepperscale.com/peruvian-white-habanero",
+      "source_name": "PepperScale"
     },
     {
       "name": "Goat Pepper",
@@ -1129,7 +1222,8 @@
       "max_shu": 350000,
       "min_jrp": 12,
       "max_jrp": 140,
-      "link": "http://www.pepperscale.com/goat-pepper"
+      "link": "http://www.pepperscale.com/goat-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Madame Jeanette Pepper",
@@ -1141,7 +1235,8 @@
       "max_shu": 325000,
       "min_jrp": 15,
       "max_jrp": 130,
-      "link": "http://www.pepperscale.com/madame-jeanette-pepper"
+      "link": "http://www.pepperscale.com/madame-jeanette-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Fatalii Pepper",
@@ -1153,7 +1248,8 @@
       "max_shu": 400000,
       "min_jrp": 14,
       "max_jrp": 160,
-      "link": "http://www.pepperscale.com/fatalii-pepper"
+      "link": "http://www.pepperscale.com/fatalii-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Devil’s Tongue Pepper",
@@ -1165,7 +1261,8 @@
       "max_shu": 325000,
       "min_jrp": 16,
       "max_jrp": 130,
-      "link": "https://www.pepperscale.com/devils-tongue-pepper/"
+      "link": "https://www.pepperscale.com/devils-tongue-pepper/",
+      "source_name": "PepperScale"
     },
     {
       "name": "Aji Chombo",
@@ -1177,7 +1274,8 @@
       "max_shu": 350000,
       "min_jrp": 18,
       "max_jrp": 140,
-      "link": "http://www.pepperscale.com/aji-chombo/"
+      "link": "http://www.pepperscale.com/aji-chombo/",
+      "source_name": "PepperScale"
     },
     {
       "name": "Caribbean Red Habanero",
@@ -1189,7 +1287,8 @@
       "max_shu": 445000,
       "min_jrp": 35,
       "max_jrp": 178,
-      "link": "http://www.pepperscale.com/caribbean-red-habanero"
+      "link": "http://www.pepperscale.com/caribbean-red-habanero",
+      "source_name": "PepperScale"
     },
     {
       "name": "Red Savina Habanero",
@@ -1201,7 +1300,8 @@
       "max_shu": 577000,
       "min_jrp": 44,
       "max_jrp": 231,
-      "link": "http://www.pepperscale.com/red-savina-habanero"
+      "link": "http://www.pepperscale.com/red-savina-habanero",
+      "source_name": "PepperScale"
     },
     {
       "name": "Chocolate Habanero",
@@ -1213,7 +1313,8 @@
       "max_shu": 577000,
       "min_jrp": 53,
       "max_jrp": 231,
-      "link": "http://www.pepperscale.com/chocolate-habanero"
+      "link": "http://www.pepperscale.com/chocolate-habanero",
+      "source_name": "PepperScale"
     },
     {
       "name": "Bhut Jolokia Chocolate",
@@ -1225,7 +1326,8 @@
       "max_shu": 1001304,
       "min_jrp": 100,
       "max_jrp": 400,
-      "link": "http://www.pepperscale.com/bhut-jolokia-chocolate"
+      "link": "http://www.pepperscale.com/bhut-jolokia-chocolate",
+      "source_name": "PepperScale"
     },
     {
       "name": "Trinidad Scorpion “Butch T”",
@@ -1237,7 +1339,8 @@
       "max_shu": 1463700,
       "min_jrp": 100,
       "max_jrp": 585,
-      "link": "https://www.pepperscale.com/trinidad-scorpion-butch-t/"
+      "link": "https://www.pepperscale.com/trinidad-scorpion-butch-t/",
+      "source_name": "PepperScale"
     },
     {
       "name": "7 Pot Primo",
@@ -1249,7 +1352,8 @@
       "max_shu": 1268250,
       "min_jrp": 100,
       "max_jrp": 507,
-      "link": "https://www.pepperscale.com/7-pot-primo/"
+      "link": "https://www.pepperscale.com/7-pot-primo/",
+      "source_name": "PepperScale"
     },
     {
       "name": "7 Pot Jonah",
@@ -1261,7 +1365,8 @@
       "max_shu": 1200000,
       "min_jrp": 100,
       "max_jrp": 480,
-      "link": "https://www.pepperscale.com/7-pot-jonah/"
+      "link": "https://www.pepperscale.com/7-pot-jonah/",
+      "source_name": "PepperScale"
     },
     {
       "name": "7 Pot Bubblegum",
@@ -1273,7 +1378,8 @@
       "max_shu": 1000000,
       "min_jrp": 106,
       "max_jrp": 400,
-      "link": "https://www.pepperscale.com/7-pot-bubblegum/"
+      "link": "https://www.pepperscale.com/7-pot-bubblegum/",
+      "source_name": "PepperScale"
     },
     {
       "name": "Ghost Pepper",
@@ -1285,7 +1391,8 @@
       "max_shu": 1041427,
       "min_jrp": 107,
       "max_jrp": 417,
-      "link": "http://www.pepperscale.com/ghost-pepper"
+      "link": "http://www.pepperscale.com/ghost-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Naga Viper",
@@ -1297,7 +1404,8 @@
       "max_shu": 1382118,
       "min_jrp": 113,
       "max_jrp": 553,
-      "link": "https://www.pepperscale.com/naga-viper/"
+      "link": "https://www.pepperscale.com/naga-viper/",
+      "source_name": "PepperScale"
     },
     {
       "name": "7 Pot Douglah",
@@ -1309,7 +1417,8 @@
       "max_shu": 1853986,
       "min_jrp": 109,
       "max_jrp": 742,
-      "link": "https://www.pepperscale.com/7-pot-douglah/"
+      "link": "https://www.pepperscale.com/7-pot-douglah/",
+      "source_name": "PepperScale"
     },
     {
       "name": "Naga Morich",
@@ -1321,7 +1430,8 @@
       "max_shu": 1500000,
       "min_jrp": 125,
       "max_jrp": 600,
-      "link": "http://www.pepperscale.com/naga-morich"
+      "link": "http://www.pepperscale.com/naga-morich",
+      "source_name": "PepperScale"
     },
     {
       "name": "Dorset Naga",
@@ -1333,7 +1443,8 @@
       "max_shu": 1598227,
       "min_jrp": 125,
       "max_jrp": 639,
-      "link": "http://www.pepperscale.com/dorset-naga"
+      "link": "http://www.pepperscale.com/dorset-naga",
+      "source_name": "PepperScale"
     },
     {
       "name": "Trinidad 7 Pot Pepper",
@@ -1345,7 +1456,8 @@
       "max_shu": 1200000,
       "min_jrp": 125,
       "max_jrp": 480,
-      "link": "https://www.pepperscale.com/7-pot-pepper/"
+      "link": "https://www.pepperscale.com/7-pot-pepper/",
+      "source_name": "PepperScale"
     },
     {
       "name": "7 Pot Brain Strain",
@@ -1357,7 +1469,8 @@
       "max_shu": 1350000,
       "min_jrp": 125,
       "max_jrp": 540,
-      "link": "https://www.pepperscale.com/7-pot-brain-strain/"
+      "link": "https://www.pepperscale.com/7-pot-brain-strain/",
+      "source_name": "PepperScale"
     },
     {
       "name": "7 Pot Barrackpore",
@@ -1369,7 +1482,8 @@
       "max_shu": 1300000,
       "min_jrp": 125,
       "max_jrp": 520,
-      "link": "https://www.pepperscale.com/7-pot-barrackpore/"
+      "link": "https://www.pepperscale.com/7-pot-barrackpore/",
+      "source_name": "PepperScale"
     },
     {
       "name": "Infinity Pepper",
@@ -1381,7 +1495,8 @@
       "max_shu": 1250000,
       "min_jrp": 133,
       "max_jrp": 500,
-      "link": "http://www.pepperscale.com/infinity-pepper"
+      "link": "http://www.pepperscale.com/infinity-pepper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Trinidad Moruga Scorpion",
@@ -1393,7 +1508,8 @@
       "max_shu": 2000000,
       "min_jrp": 150,
       "max_jrp": 800,
-      "link": "http://www.pepperscale.com/trinidad-moruga-scorpion"
+      "link": "http://www.pepperscale.com/trinidad-moruga-scorpion",
+      "source_name": "PepperScale"
     },
     {
       "name": "Trinidad Scorpion Chocolate",
@@ -1405,7 +1521,8 @@
       "max_shu": 2000000,
       "min_jrp": 150,
       "max_jrp": 800,
-      "link": "http://www.pepperscale.com/trinidad-scorpion-chocolate"
+      "link": "http://www.pepperscale.com/trinidad-scorpion-chocolate",
+      "source_name": "PepperScale"
     },
     {
       "name": "Carolina Reaper",
@@ -1417,7 +1534,8 @@
       "max_shu": 2200000,
       "min_jrp": 175,
       "max_jrp": 880,
-      "link": "http://www.pepperscale.com/carolina-reaper"
+      "link": "http://www.pepperscale.com/carolina-reaper",
+      "source_name": "PepperScale"
     },
     {
       "name": "Komodo Dragon Pepper",
@@ -1429,7 +1547,8 @@
       "max_shu": 2200000,
       "min_jrp": 175,
       "max_jrp": 880,
-      "link": "https://www.pepperscale.com/komodo-dragon-pepper/"
+      "link": "https://www.pepperscale.com/komodo-dragon-pepper/",
+      "source_name": "PepperScale"
     },
     {
       "name": "Pepper Spray",
@@ -1441,7 +1560,8 @@
       "max_shu": 5300000,
       "min_jrp": 250,
       "max_jrp": 2120,
-      "link": "http://www.pepperscale.com/pepper-spray"
+      "link": "http://www.pepperscale.com/pepper-spray",
+      "source_name": "PepperScale"
     },
     {
       "name": "Pure Capsaicin",
@@ -1453,7 +1573,8 @@
       "max_shu": 16000000,
       "min_jrp": 1875,
       "max_jrp": 6400,
-      "link": "http://www.pepperscale.com/capsaicin"
+      "link": "http://www.pepperscale.com/capsaicin",
+      "source_name": "PepperScale"
     },
     {
       "name": "Dragon’s Breath Pepper",
@@ -1465,7 +1586,8 @@
       "max_shu": 2480000,
       "min_jrp": 310,
       "max_jrp": 992,
-      "link": "https://www.pepperscale.com/dragons-breath-pepper/"
+      "link": "https://www.pepperscale.com/dragons-breath-pepper/",
+      "source_name": "PepperScale"
     }
   ]
 }

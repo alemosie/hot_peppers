@@ -15,25 +15,25 @@ from bs4 import BeautifulSoup
 class FetchData():
     """Fetch and write peppers data either through static HTML or AJAX POST request"""
     def __init__(self, output_path=None):
-        self.raw_data = self.source.raw_data
+        # self.raw_data = self.source.raw_data
         self.output_path = output_path
 
-    def sanitize_source_data(self, source):
-        sanitizer = Sanitizer(source.labeled_data)
+    def sanitize_source_data(self, labeled_data, source_name):
+        sanitizer = Sanitizer(labeled_data, source_name) # with new datasources, change "source_name" attribute
         self.data = sanitizer.clean
         self.json = self.data.to_dict(orient="records")
 
     def run_scraper(self):
         """Grab data through live AJAX request"""
-        scraper = PepperScraper()
-        self.source = scraper.run()
-        self.sanitize_source_data(self.source)
+        self.scraper = PepperScraper()
+        self.scraper.run()
+        self.sanitize_source_data(self.scraper.labeled_data, source_name="PepperScale")
 
     def run_parser(self):
         """Parse data from static PepperScale HTML"""
-        parser = StaticPepperParser()
-        self.source = parser.run()
-        self.sanitize_source_data(self.source)
+        self.parser = StaticPepperParser()
+        self.parser.run()
+        self.sanitize_source_data(self.parser.labeled_data, source_name="PepperScale")
 
     def write_json(self):
         header_info = """{
@@ -44,7 +44,7 @@ class FetchData():
         """ % (datetime.now())
 
         output_dir = "data" if not self.output_path else self.output_path
-        json_file = "{}/peppers_{}.json".format(output_dir, str(datetime.now().date()).replace("-",""))
+        json_file = "{}/pepperscale_{}.json".format(output_dir, str(datetime.now().date()).replace("-",""))
         print("Writing to %s..." % json_file)
         with open (json_file, "w") as json_file:
             json_file.write(header_info)
@@ -115,12 +115,13 @@ class StaticPepperParser():
             self.pepper_html = BeautifulSoup(raw_html, 'html.parser')
 
         raw_peppers = self.pepper_html.find_all("tr", re.compile("even|odd"))
-        print("%d peppers fetched!" % len(self.labeled_data))
         return raw_peppers
 
     def label_html_data(self, row_tag):
         labels = ["name", "min_shu", "max_shu", "heat", "jrp", "species", "origin", "link"]
         pepper_info = [element.text.encode("utf-8") for element in row_tag.contents if element.text != "pepperscale.com"]
+            # convert any byte values into strings
+        pepper_info = [str(element, "utf-8") if type(element) != str else element for element in pepper_info]
         link = str(row_tag.find("a"))
         return dict(zip(labels, pepper_info + [link]))
 

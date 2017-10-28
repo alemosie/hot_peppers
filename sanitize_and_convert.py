@@ -5,13 +5,13 @@ import json
 class SanitizePepperData():
     """From nested object containing raw, solely parsed pepper data,
     create a clean dataset for analysis"""
-    def __init__(self, pepper_data):
+    def __init__(self, pepper_data, source_name):
         self.raw = pd.DataFrame(pepper_data)
-        self.clean = self.sanitize_pepper_data(self.raw.copy())
+        self.clean = self.sanitize_pepper_data(self.raw.copy(), source_name)
 
     #### GENERAL FUNCTIONS
 
-    def sanitize_pepper_data(self, data):
+    def sanitize_pepper_data(self, data, source_name):
         """Run all sanitization functions; produce clean copy of raw data"""
         data["min_shu"] = self.sanitize_shu("min_shu")
         data["max_shu"] = self.sanitize_shu("max_shu")
@@ -21,8 +21,9 @@ class SanitizePepperData():
         data["origin"] = self.sanitize_field("origin", self.sanitize_origin_value)
         data["region"] = self.sanitize_field("origin", self.add_region_value)
         data["link"] = self.sanitize_link()
+        data["source_name"] = source_name
 
-        clean_cols = ["name", "species", "heat", "region", "origin", "min_shu", "max_shu", "min_jrp", "max_jrp", "link"]
+        clean_cols = ["name", "species", "heat", "region", "origin", "min_shu", "max_shu", "min_jrp", "max_jrp", "link", "source_name"]
         return data[clean_cols]
 
     def sanitize_field(self, field, value_sanitization_function):
