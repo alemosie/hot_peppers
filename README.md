@@ -34,7 +34,8 @@ Field | Description
 "max_shu" | Scoville Heat Units (SHU) for the hottest variation of the pepper
 "min_jrp" | Jalapeño Reference Point (JRP); minimum value for number of times hotter than a jalapeño the pepper is
 "max_jrp" | Jalapeño Reference Point (JRP); maximum value for number of times hotter than a jalapeño the pepper is
-"link" | PepperScale article containing more information on the pepper
+"link" |  More information on the pepper and/or data source link
+"source_name" | Name of source site from which pepper data came
 
 Basis for min/max [Scoville heat units (SHU)](https://www.pepperscale.com/scoville-heat-units/): Individual hot peppers have a range of heat, depending on where they are grown, how long they’ve matured, and the amount of sun they’ve received.
 
