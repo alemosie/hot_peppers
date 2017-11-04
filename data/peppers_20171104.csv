@@ -1,0 +1,166 @@
+heat,link,max_jrp,max_shu,min_jrp,min_shu,name,origin,region,source_name,species
+mild,http://www.pepperscale.com/bell-pepper,-2500.0,0,-8000.0,0.0,Bell Pepper,"Mexico, South America",Multi-Region,PepperScale,annuum
+mild,http://www.pepperscale.com/gypsy-pepper,-2500.0,0,-8000.0,0.0,Gypsy Pepper,United States,North America,PepperScale,annuum
+mild,http://www.pepperscale.com/purple-beauty-pepper,-2500.0,0,-8000.0,0.0,Purple Beauty Pepper,South America,South America,PepperScale,annuum
+mild,http://www.pepperscale.com/melrose-pepper,-2500.0,0,-8000.0,0.0,Melrose Pepper,United States,North America,PepperScale,annuum
+mild,http://www.pepperscale.com/banana-pepper,-5.0,500,-8000.0,0.0,Banana Pepper ,South America,South America,PepperScale,annuum
+mild,http://www.pepperscale.com/trinidad-perfume/,-5.0,500,-8000.0,0.0,Trinidad Perfume,Caribbean,Central America and the Caribbean,PepperScale,chinense
+mild,http://www.pepperscale.com/aji-dulce/,-3.0,1000,-8000.0,0.0,Aji Dulce,Caribbean,Central America and the Caribbean,PepperScale,chinense
+mild,http://www.pepperscale.com/peperone-di-senise/,2500.0,0,-8000.0,0.0,Peperone Di Senise,Italy,Europe,PepperScale,annuum
+mild,https://www.pepperscale.com/tangerine-dream-pepper/,-250.0,100,-8000.0,0.0,Tangerine Dream Pepper,United States,North America,PepperScale,annuum
+mild,https://www.pepperscale.com/california-wonder-pepper/,-8000.0,0,-2500.0,0.0,California Wonder Pepper,United States,North America,PepperScale,annuum
+mild,https://www.pepperscale.com/carmen-pepper/,-8000.0,0,-2500.0,0.0,Carmen Pepper,Italy,Europe,PepperScale,annuum
+mild,http://www.pepperscale.com/medusa-pepper,-3.0,1000,-8000.0,1.0,Medusa Pepper,"Mexico, South America",Multi-Region,PepperScale,annuum
+mild,https://www.pepperscale.com/chilly-chili/,-2.0,1000,-8000.0,1.0,Chilly Chili,United States,North America,PepperScale,annuum
+mild,http://www.pepperscale.com/shishito-pepper,-13.0,200,-160.0,50.0,Shishito Pepper,Japan,Asia,PepperScale,annuum
+mild,http://www.pepperscale.com/pepperoncini,-5.0,500,-80.0,100.0,Pepperoncini,Italy,Europe,PepperScale,annuum
+mild,http://www.pepperscale.com/pimento-pepper,-5.0,500,-80.0,100.0,Pimento Pepper,,,PepperScale,annuum
+mild,http://www.pepperscale.com/italian-long-hot-peppers,-3.0,1000,-80.0,100.0,Italian Long Hot Pepper,Italy,Europe,PepperScale,annuum
+mild,http://www.pepperscale.com/cubanelle-pepper,-3.0,1000,-80.0,100.0,Cubanelle Pepper,"Italy, Cuba",Multi-Region,PepperScale,annuum
+mild,https://www.pepperscale.com/mexibell-pepper/,-80.0,1000,-3.0,100.0,Mexibell Pepper,United States,North America,PepperScale,annuum
+mild,http://www.pepperscale.com/piquillo-peppers,-3.0,1000,-16.0,500.0,Piquillo Peppers,Spain,Europe,PepperScale,annuum
+mild,http://www.pepperscale.com/beaver-dam-pepper,-3.0,1000,-16.0,500.0,Beaver Dam Pepper,United States,North America,PepperScale,annuum
+mild,http://www.pepperscale.com/padron-pepper,0.0,2500,-16.0,500.0,Padrón Pepper,Spain,Europe,PepperScale,annuum
+mild,http://www.pepperscale.com/espelette-pepper,0.0,4000,-16.0,500.0,Espelette Pepper,France,Europe,PepperScale,annuum
+mild,http://www.pepperscale.com/anaheim-pepper,0.0,2500,-16.0,500.0,Anaheim Pepper,Mexico,North America,PepperScale,annuum
+mild,https://www.pepperscale.com/santa-fe-grande-pepper/,-16.0,700,-3.0,500.0,Santa Fe Grande Pepper,United States,North America,PepperScale,annuum
+medium,https://www.pepperscale.com/cajun-belle-pepper/,0.0,4000,-5.0,500.0,Cajun Belle Pepper,United States,North America,PepperScale,annuum
+mild,http://www.pepperscale.com/holy-mole-pepper,-3.0,800,-10.0,700.0,Holy Mole Pepper,United States,North America,PepperScale,annuum
+mild,http://www.pepperscale.com/aji-panca,-2.0,1500,-8.0,1000.0,Aji Panca,Peru,South America,PepperScale,baccatum
+mild,http://www.pepperscale.com/ancho-pepper,-2.0,1500,-8.0,1000.0,Ancho Pepper,Mexico,North America,PepperScale,annuum
+mild,http://www.pepperscale.com/poblano-peppers,-2.0,1500,-8.0,1000.0,Poblano Pepper,Mexico,North America,PepperScale,annuum
+mild,http://www.pepperscale.com/guindilla-pepper,0.0,2000,-8.0,1000.0,Guindilla Pepper,Spain,Europe,PepperScale,annuum
+mild,http://www.pepperscale.com/chilaca-pepper,0.0,2500,-8.0,1000.0,Chilaca Pepper,Mexico,North America,PepperScale,annuum
+mild,http://www.pepperscale.com/pasilla-pepper,0.0,2500,-8.0,1000.0,Pasilla Pepper,Mexico,North America,PepperScale,annuum
+mild,http://www.pepperscale.com/cascabel-pepper,0.0,3000,-8.0,1000.0,Cascabel Pepper,Mexico,North America,PepperScale,annuum
+medium,http://www.pepperscale.com/hatch-peppers,0.0,8000,-3.0,1000.0,Hatch Peppers,United States,North America,PepperScale,annuum
+medium,http://www.pepperscale.com/numex-centennial/,0.0,5000,-5.0,1000.0,NuMex Centennial,United States,North America,PepperScale,annuum
+mild,https://www.pepperscale.com/kashmiri-chili/,0.0,2000,-8.0,1000.0,Kashmiri Chili,India,Asia,PepperScale,annuum
+mild,http://www.pepperscale.com/peppadew-pepper,-2.0,1200,-7.0,1100.0,Peppadew Pepper,Africa,Africa,PepperScale,baccatum
+mild,http://www.pepperscale.com/rocotillo-pepper,0.0,2500,-5.0,1500.0,Rocotillo Pepper,Peru,South America,PepperScale,baccatum
+medium,http://www.pepperscale.com/mulato-pepper,0.0,3000,-3.0,2500.0,Mulato Pepper,Mexico,North America,PepperScale,annuum
+medium,http://www.pepperscale.com/cherry-bomb-pepper,0.0,5000,0.0,2500.0,Cherry Bomb Pepper,United States,North America,PepperScale,annuum
+medium,http://www.pepperscale.com/cowhorn-pepper,0.0,5000,0.0,2500.0,Cowhorn Pepper,South America,South America,PepperScale,annuum
+medium,http://www.pepperscale.com/guajillo-pepper,0.0,5000,0.0,2500.0,Guajillo Pepper,Mexico,North America,PepperScale,annuum
+medium,http://www.pepperscale.com/jalapeno-peppers,0.0,8000,0.0,2500.0,Jalapeño Pepper,Mexico,North America,PepperScale,annuum
+medium,http://www.pepperscale.com/purple-jalapeno-pepper,0.0,8000,0.0,2500.0,Purple Jalapeño Pepper,Mexico,North America,PepperScale,annuum
+medium,http://www.pepperscale.com/chipotle-pepper,0.0,8000,0.0,2500.0,Chipotle Pepper,Mexico,North America,PepperScale,annuum
+medium,http://www.pepperscale.com/fresno-pepper,0.0,10000,0.0,2500.0,Fresno Pepper,United States,North America,PepperScale,annuum
+medium,http://www.pepperscale.com/chimayo-pepper,0.0,6000,0.0,4000.0,Chimayo Pepper,United States,North America,PepperScale,annuum
+medium,http://www.pepperscale.com/sandia-pepper,0.0,7000,0.0,5000.0,Sandia Pepper,United States,North America,PepperScale,annuum
+medium,http://www.pepperscale.com/puya-pepper,0.0,8000,0.0,5000.0,Puya Pepper,Mexico,North America,PepperScale,annuum
+medium,http://www.pepperscale.com/hungarian-wax-pepper,4.0,10000,0.0,5000.0,Hungarian Wax Pepper,Hungary,Europe,PepperScale,annuum
+medium,http://www.pepperscale.com/black-hungarian-pepper,4.0,10000,0.0,5000.0,Black Hungarian Pepper,Hungary,Europe,PepperScale,annuum
+medium,http://www.pepperscale.com/bishops-crown-pepper,12.0,30000,0.0,5000.0,Bishop&#039;s Crown Pepper,South America,South America,PepperScale,baccatum
+medium,http://www.pepperscale.com/bulgarian-carrot-pepper,12.0,30000,0.0,5000.0,Bulgarian Carrot Pepper,Hungary,Europe,PepperScale,annuum
+medium,http://www.pepperscale.com/fish-pepper,12.0,30000,0.0,5000.0,Fish Pepper,United States,North America,PepperScale,annuum
+medium,https://www.pepperscale.com/hinkelhatz-pepper/,16.0,30000,0.0,5000.0,Hinkelhatz Pepper,United States,North America,PepperScale,annuum
+medium,http://www.pepperscale.com/aleppo-pepper,4.0,10000,0.0,10000.0,Aleppo Pepper,Syria,Middle East,PepperScale,annuum
+medium,http://www.pepperscale.com/peter-pepper,9.0,23000,0.0,10000.0,Peter Pepper,United States,North America,PepperScale,annuum
+medium,http://www.pepperscale.com/serrano-peppers,9.0,23000,0.0,10000.0,Serrano Pepper,United States,North America,PepperScale,annuum
+medium,http://www.pepperscale.com/sport-peppers,9.0,23000,0.0,10000.0,Sport Peppers,Mexico,North America,PepperScale,annuum
+medium,http://www.pepperscale.com/bolivian-rainbow-pepper,12.0,30000,4.0,10000.0,Bolivian Rainbow Pepper,Bolivia,South America,PepperScale,annuum
+medium,http://www.pepperscale.com/black-pearl-pepper,12.0,30000,4.0,10000.0,Black Pearl Pepper,United States,North America,PepperScale,annuum
+medium,http://www.pepperscale.com/manzano-pepper,12.0,30000,2.0,12000.0,Manzano Pepper,South America,South America,PepperScale,pubescens
+medium,http://www.pepperscale.com/japones-pepper,12.0,30000,2.0,15000.0,Japones Pepper,Japan,Asia,PepperScale,annuum
+medium,http://www.pepperscale.com/lemon-drop-pepper,12.0,30000,2.0,15000.0,Lemon Drop Pepper,Peru,South America,PepperScale,baccatum
+medium,http://www.pepperscale.com/chile-de-arbol,12.0,30000,2.0,15000.0,Chile De Àrbol,Mexico,North America,PepperScale,annuum
+medium,http://www.pepperscale.com/black-cobra-pepper,16.0,40000,3.0,20000.0,Black Cobra Pepper,South America,South America,PepperScale,annuum
+medium,http://www.pepperscale.com/jwala-pepper,12.0,30000,3.0,20000.0,Jwala Pepper,India,Asia,PepperScale,annuum
+medium,http://www.pepperscale.com/numex-twilight,20.0,50000,4.0,30000.0,NuMex Twilight,United States,North America,PepperScale,annuum
+medium,http://www.pepperscale.com/aji-amarillo,20.0,50000,4.0,30000.0,Aji Amarillo,Peru,South America,PepperScale,baccatum
+medium,http://www.pepperscale.com/aji-charapita,20.0,50000,4.0,30000.0,Aji Charapita,Peru,South America,PepperScale,chinense
+medium,http://www.pepperscale.com/aji-omnicolor,20.0,50000,4.0,30000.0,Aji Omnicolor,Peru,South America,PepperScale,baccatum
+medium,http://www.pepperscale.com/tabasco-pepper,20.0,50000,4.0,30000.0,Tabasco Pepper,Costa Rica,Central America and the Caribbean,PepperScale,frutescens
+medium,http://www.pepperscale.com/cayenne-pepper,20.0,50000,4.0,30000.0,Cayenne Pepper,French Guyana,South America,PepperScale,annuum
+medium,http://www.pepperscale.com/rocoto-pepper,40.0,100000,4.0,30000.0,Rocoto Pepper,South America,South America,PepperScale,pubescens
+medium,https://www.pepperscale.com/rooster-spur-pepper/,20.0,50000,4.0,30000.0,Rooster Spur Pepper,United States,North America,PepperScale,annuum
+medium,http://www.pepperscale.com/super-chili-pepper,20.0,50000,5.0,40000.0,Super Chili Pepper,United States,North America,PepperScale,annuum
+medium,http://www.pepperscale.com/pequin-pepper,24.0,60000,5.0,40000.0,Pequin Pepper,Mexico,North America,PepperScale,annuum
+medium,http://www.pepperscale.com/tien-tsin-pepper,30.0,75000,6.0,50000.0,Tien Tsin Pepper,China,Asia,PepperScale,annuum
+extra hot,http://www.pepperscale.com/malagueta-pepper,40.0,100000,6.0,50000.0,Malagueta Pepper,Brazil,South America,PepperScale,frutescens
+extra hot,http://www.pepperscale.com/chiltepin-pepper,40.0,100000,6.0,50000.0,Chiltepin Pepper,United States,North America,PepperScale,annuum
+extra hot,http://www.pepperscale.com/thai-peppers,40.0,100000,6.0,50000.0,Thai Pepper,Thailand,Asia,PepperScale,annuum
+extra hot,https://www.pepperscale.com/byadgi-chili/,40.0,100000,6.0,50000.0,Byadgi Chili,India,Asia,PepperScale,annuum
+extra hot,http://www.pepperscale.com/dundicut-pepper/,26.0,65000,7.0,55000.0,Dundicut Pepper,Pakistan,Asia,PepperScale,annuum
+extra hot,https://www.pepperscale.com/cheiro-roxa/,32.0,80000,8.0,60000.0,Cheiro Roxa,Brazil,South America,PepperScale,chinense
+extra hot,http://www.pepperscale.com/prairie-fire-pepper,32.0,80000,9.0,70000.0,Prairie Fire Pepper,Mexico,North America,PepperScale,annuum
+extra hot,http://www.pepperscale.com/charleston-hot-pepper,40.0,100000,9.0,70000.0,Charleston Hot Pepper,United States,North America,PepperScale,annuum
+extra hot,https://www.pepperscale.com/siling-labuyo/,40.0,100000,10.0,80000.0,Siling Labuyo,Phillipines,Asia,PepperScale,frutescens
+extra hot,http://www.pepperscale.com/datil-pepper,120.0,300000,12.0,100000.0,Datil Pepper,United States,North America,PepperScale,chinense
+extra hot,http://www.pepperscale.com/wiri-wiri-pepper,140.0,350000,12.0,100000.0,Wiri Wiri Pepper,South America,South America,PepperScale,chinense
+extra hot,http://www.pepperscale.com/scotch-bonnet-pepper,140.0,350000,12.0,100000.0,Scotch Bonnet Pepper,Caribbean,Central America and the Caribbean,PepperScale,chinense
+extra hot,http://www.pepperscale.com/habanero-pepper,140.0,350000,12.0,100000.0,Habanero Pepper,South America,South America,PepperScale,chinense
+extra hot,http://www.pepperscale.com/peruvian-white-habanero,140.0,350000,12.0,100000.0,Peruvian White Habanero,Peru,South America,PepperScale,chinense
+extra hot,http://www.pepperscale.com/goat-pepper,140.0,350000,12.0,100000.0,Goat Pepper,Caribbean,Central America and the Caribbean,PepperScale,chinense
+extra hot,http://www.pepperscale.com/madame-jeanette-pepper,130.0,325000,15.0,125000.0,Madame Jeanette Pepper,South America,South America,PepperScale,chinense
+extra hot,http://www.pepperscale.com/fatalii-pepper,160.0,400000,14.0,125000.0,Fatalii Pepper,Africa,Africa,PepperScale,chinense
+extra hot,https://www.pepperscale.com/devils-tongue-pepper/,130.0,325000,16.0,125000.0,Devil’s Tongue Pepper,United States,North America,PepperScale,chinense
+extra hot,http://www.pepperscale.com/aji-chombo/,140.0,350000,18.0,150000.0,Aji Chombo,Panama,Central America and the Caribbean,PepperScale,chinense
+super hot,http://www.pepperscale.com/caribbean-red-habanero,178.0,445000,35.0,300000.0,Caribbean Red Habanero,Mexico,North America,PepperScale,chinense
+super hot,http://www.pepperscale.com/red-savina-habanero,231.0,577000,44.0,350000.0,Red Savina Habanero,United States,North America,PepperScale,chinense
+super hot,http://www.pepperscale.com/chocolate-habanero,231.0,577000,53.0,425000.0,Chocolate Habanero,Jamaica,Central America and the Caribbean,PepperScale,chinense
+super hot,http://www.pepperscale.com/bhut-jolokia-chocolate,400.0,1001304,100.0,800000.0,Bhut Jolokia Chocolate,India,Asia,PepperScale,chinense
+super hot,https://www.pepperscale.com/trinidad-scorpion-butch-t/,585.0,1463700,100.0,800000.0,Trinidad Scorpion “Butch T”,Australia,Australia and Oceania,PepperScale,chinense
+super hot,https://www.pepperscale.com/7-pot-primo/,507.0,1268250,100.0,800000.0,7 Pot Primo,United States,North America,PepperScale,chinense
+super hot,https://www.pepperscale.com/7-pot-jonah/,480.0,1200000,100.0,800000.0,7 Pot Jonah,Trinidad,Central America and the Caribbean,PepperScale,chinense
+super hot,https://www.pepperscale.com/7-pot-bubblegum/,400.0,1000000,106.0,850000.0,7 Pot Bubblegum,United Kingdom,Europe,PepperScale,chinense
+super hot,http://www.pepperscale.com/ghost-pepper,417.0,1041427,107.0,855000.0,Ghost Pepper,India,Asia,PepperScale,chinense
+super hot,https://www.pepperscale.com/naga-viper/,553.0,1382118,113.0,900000.0,Naga Viper,United Kingdom,Europe,PepperScale,chinense
+super hot,https://www.pepperscale.com/7-pot-douglah/,742.0,1853986,109.0,923889.0,7 Pot Douglah,Trinidad,Central America and the Caribbean,PepperScale,chinense
+super hot,http://www.pepperscale.com/naga-morich,600.0,1500000,125.0,1000000.0,Naga Morich,India,Asia,PepperScale,chinense
+super hot,http://www.pepperscale.com/dorset-naga,639.0,1598227,125.0,1000000.0,Dorset Naga,United Kingdom,Europe,PepperScale,chinense
+super hot,https://www.pepperscale.com/7-pot-pepper/,480.0,1200000,125.0,1000000.0,Trinidad 7 Pot Pepper,Trinidad,Central America and the Caribbean,PepperScale,chinense
+super hot,https://www.pepperscale.com/7-pot-brain-strain/,540.0,1350000,125.0,1000000.0,7 Pot Brain Strain,Trinidad,Central America and the Caribbean,PepperScale,chinense
+super hot,https://www.pepperscale.com/7-pot-barrackpore/,520.0,1300000,125.0,1000000.0,7 Pot Barrackpore,Trinidad,Central America and the Caribbean,PepperScale,chinense
+super hot,http://www.pepperscale.com/infinity-pepper,500.0,1250000,133.0,1067286.0,Infinity Pepper,United Kingdom,Europe,PepperScale,chinense
+super hot,http://www.pepperscale.com/trinidad-moruga-scorpion,800.0,2000000,150.0,1200000.0,Trinidad Moruga Scorpion,Trinidad,Central America and the Caribbean,PepperScale,chinense
+super hot,http://www.pepperscale.com/trinidad-scorpion-chocolate,800.0,2000000,150.0,1200000.0,Trinidad Scorpion Chocolate,Trinidad,Central America and the Caribbean,PepperScale,chinense
+super hot,http://www.pepperscale.com/carolina-reaper,880.0,2200000,175.0,1400000.0,Carolina Reaper,United States,North America,PepperScale,chinense
+super hot,https://www.pepperscale.com/komodo-dragon-pepper/,880.0,2200000,175.0,1400000.0,Komodo Dragon Pepper,United Kingdom,Europe,PepperScale,chinense
+super hot,http://www.pepperscale.com/pepper-spray,2120.0,5300000,250.0,2000000.0,Pepper Spray,,,PepperScale,
+super hot,http://www.pepperscale.com/capsaicin,6400.0,16000000,1875.0,15000000.0,Pure Capsaicin,,,PepperScale,
+super hot,https://www.pepperscale.com/dragons-breath-pepper/,992.0,2480000,310.0,,Dragon’s Breath Pepper,United Kingdom,Europe,PepperScale,chinense
+,https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale,,2480000,,,Dragon's Breath Pepper,United Kingdom,,ChiliWorld,
+,https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale,,2200000,,1569300.0,Carolina Reaper Pepper,United States,,ChiliWorld,
+,https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale,,1463700,,,Trinidad Scorpion Butch T Pepper,Australia,,ChiliWorld,
+,https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale,,1382118,,,Naga Viper Pepper,United Kingdom,,ChiliWorld,
+,https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale,,1041427,,,Naga Bhut Jolokia Pepper,,,ChiliWorld,
+,https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale,,923000,,,Dorset Naga Pepper,,,ChiliWorld,
+,https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale,,855000,,,Naga Jolokia Pepper,,,ChiliWorld,
+,https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale,,577000,,350000.0,Red Savina Habanero Pepper,,,ChiliWorld,
+,https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale,,350000,,100000.0,Habanero Pepper,,,ChiliWorld,
+,https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale,,325000,,100000.0,Scotch Bonnet Pepper,,,ChiliWorld,
+,https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale,,225000,,100000.0,Birds Eye Pepper,,,ChiliWorld,
+,https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale,,200000,,100000.0,Jamaican Hot Pepper,,,ChiliWorld,
+,https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale,,125000,,100000.0,Carolina Cayenne Pepper,,,ChiliWorld,
+,https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale,,110000,,95000.0,Bahamian Pepper,,,ChiliWorld,
+,https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale,,115000,,85000.0,Tabiche Pepper,,,ChiliWorld,
+,https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale,,80000,,75000.0,Red Amazon Pepper,,,ChiliWorld,
+,https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale,,100000,,50000.0,Thai Pepper,,,ChiliWorld,
+,https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale,,100000,,50000.0,Chiltepin Pepper,,,ChiliWorld,
+,https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale,,58000,,40000.0,Piquin Pepper,,,ChiliWorld,
+,https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale,,50000,,40000.0,Super Chile Pepper,,,ChiliWorld,
+,https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale,,50000,,40000.0,Santaka Pepper,,,ChiliWorld,
+,https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale,,50000,,30000.0,Cayenne Pepper,,,ChiliWorld,
+,https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale,,50000,,30000.0,Tabasco Pepper,,,ChiliWorld,
+,https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale,,30000,,15000.0,De Arbol Pepper,,,ChiliWorld,
+,https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale,,30000,,12000.0,Manzano Pepper,,,ChiliWorld,
+,https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale,,23000,,6000.0,Serrano Pepper,,,ChiliWorld,
+,https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale,,10000,,5000.0,Hot Wax Pepper,,,ChiliWorld,
+,https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale,,10000,,5000.0,Chipotle Pepper,,,ChiliWorld,
+,https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale,,8000,,2500.0,Santaka Pepper,,,ChiliWorld,
+,https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale,,5000,,2500.0,Jalapeño Pepper,,,ChiliWorld,
+,https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale,,5000,,2500.0,Guajilla Pepper,,,ChiliWorld,
+,https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale,,2500,,1500.0,Rocotilla Pepper,,,ChiliWorld,
+,https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale,,2000,,1000.0,Pasilla Pepper,,,ChiliWorld,
+,https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale,,2000,,1000.0,Ancho Pepper,,,ChiliWorld,
+,https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale,,2000,,1000.0,Poblano Pepper,,,ChiliWorld,
+,https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale,,1000,,700.0,Coronado Pepper,,,ChiliWorld,
+,https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale,,2500,,500.0,Anaheim Pepper,,,ChiliWorld,
+,https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale,,1000,,500.0,New Mexico Pepper,,,ChiliWorld,
+,https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale,,700,,400.0,Santa Fe Grande Pepper,,,ChiliWorld,
+,https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale,,1000,,100.0,Cubanelle Pepper,,,ChiliWorld,
+,https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale,,500,,100.0,Oncini Pepper,,,ChiliWorld,
+,https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale,,500,,100.0,Pimento Pepper,,,ChiliWorld,
+,https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale,,0,,,Sweet Bell Pepper,,,ChiliWorld,

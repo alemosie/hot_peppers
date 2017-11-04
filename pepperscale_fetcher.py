@@ -4,34 +4,27 @@ from datetime import datetime
 import json
 import urllib.request # in Python2, it's urllib2
 import re
-from pprint import pprint as pp
-import sys
 import pdb
-import os
 from bs4 import BeautifulSoup
 
 # set constants
-
-HEADERS = {
-    "user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36(KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
-}
 BASE_URL = "https://www.pepperscale.com/hot-pepper-list/"
 AJAX_URL = "https://www.pepperscale.com/wp-admin/admin-ajax.php/"
 
 ### FETCHER FUNCTIONS
 
-def fetch_nonces():
+def fetch_nonces(headers):
     """Nonces are dynamically generated on a regular (daily?) basis, and need to be scraped from the
     <script> tags at the time of the scraping request"""
     # Python2
     # request = urllib2.Request(self.base_url, headers=self.headers)
     # page_html = urllib2.urlopen(request).read()
 
-    request = urllib.request.Request(BASE_URL, headers=HEADERS)
+    request = urllib.request.Request(BASE_URL, headers=headers)
     page_html = urllib.request.urlopen(request).read().decode('utf-8')
     return re.findall('"nonce":"(\w+)"', page_html)
 
-def launch_ajax_request(nonce):
+def launch_ajax_request(headers, nonce):
     """Submit a POST request to AJAX URL to get JS-generated table content"""
     request_fields = {
         "start": 0,
@@ -41,15 +34,15 @@ def launch_ajax_request(nonce):
         "nonce": nonce,
      }
 
-    return requests.post(AJAX_URL, headers=HEADERS,
+    return requests.post(AJAX_URL, headers=headers,
                          data=request_fields, json={"key":"value"}).json()["data"]
 
-def scrape_page():
+def scrape_page(headers):
     """Try all nonces found on the page until the Golden Nonce is revealed!"""
-    nonces = fetch_nonces()
+    nonces = fetch_nonces(headers)
     for nonce in nonces:
         try:
-            return launch_ajax_request(nonce)
+            return launch_ajax_request(headers, nonce)
         except:
             pass
 
@@ -57,11 +50,11 @@ def label_response_data(raw_data):
     labels = ["name", "link", "min_shu", "max_shu", "heat", "jrp", "species", "origin"]
     return pd.DataFrame([dict(zip(labels, entry)) for entry in raw_data])
 
-def run(schema):
+def run(headers, schema):
     # scrape data
-    raw_data = scrape_page()
+    raw_data = scrape_page(headers)
     labeled_data = label_response_data(raw_data)
-    print("%d peppers fetched!" % len(labeled_data))
+    print("%d peppers fetched from PepperScale!" % len(labeled_data))
 
     # sanitize data
     sanitized_data = sanitize(labeled_data, schema)
