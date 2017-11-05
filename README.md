@@ -9,7 +9,7 @@ I grew up with very little spice in my diet -- my mother is Irish, what can I sa
 - HTML parsing (BeautifulSoup, Selenium)
 - Data sanitization (Pandas, fuzzywuzzy, Regex)
 - Regression analysis (scikit-learn)
-- Code design (modules, OOP, scalability)
+- Code design (Python, modules, OOP, scalability)
 
 ## Data
 
@@ -26,7 +26,7 @@ Field | Description
 "name"| String; name of the pepper; unique
 "species" | String; pepper species. All hot peppers belong to the Capsicum genus (part of the nightshade family), but there are multiple species within it.
 "heat" | Categorical; how hot the pepper is perceived to be: "Mild", "Medium", "Extra Hot", "Super Hot" ([their](https://www.pepperscale.com/hot-pepper-list/) categories, not mine)
-"region" | String; region of the world in which the pepper grows; based on provided origin. (Standardized origin)
+"region" | Categorical; region of the world in which the pepper grows; based on provided origin. (Standardized origin)
 "origin" | String; where the pepper grows; values are country, region, or continent as listed
 "min_shu" | Float; Scoville Heat Units (SHU) for the mildest variation of the pepper
 "max_shu" | Float; Scoville Heat Units (SHU) for the hottest variation of the pepper
