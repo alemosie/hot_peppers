@@ -13,7 +13,17 @@ AJAX_URL = "https://www.pepperscale.com/wp-admin/admin-ajax.php/"
 
 ### FETCHER FUNCTIONS
 
-def fetch_nonces(headers):
+def run(headers, schema):
+    # scrape data
+    raw_data = _scrape_page(headers)
+    labeled_data = _label_response_data(raw_data)
+    print("%d peppers fetched from PepperScale!" % len(labeled_data))
+
+    # sanitize data
+    sanitized_data = _sanitize(labeled_data, schema)
+    return sanitized_data
+
+def _fetch_nonces(headers):
     """Nonces are dynamically generated on a regular (daily?) basis, and need to be scraped from the
     <script> tags at the time of the scraping request"""
     # Python2
@@ -24,7 +34,7 @@ def fetch_nonces(headers):
     page_html = urllib.request.urlopen(request).read().decode('utf-8')
     return re.findall('"nonce":"(\w+)"', page_html)
 
-def launch_ajax_request(headers, nonce):
+def _launch_ajax_request(headers, nonce):
     """Submit a POST request to AJAX URL to get JS-generated table content"""
     request_fields = {
         "start": 0,
@@ -37,33 +47,23 @@ def launch_ajax_request(headers, nonce):
     return requests.post(AJAX_URL, headers=headers,
                          data=request_fields, json={"key":"value"}).json()["data"]
 
-def scrape_page(headers):
+def _scrape_page(headers):
     """Try all nonces found on the page until the Golden Nonce is revealed!"""
-    nonces = fetch_nonces(headers)
+    nonces = _fetch_nonces(headers)
     for nonce in nonces:
         try:
-            return launch_ajax_request(headers, nonce)
+            return _launch_ajax_request(headers, nonce)
         except:
             pass
 
-def label_response_data(raw_data):
+def _label_response_data(raw_data):
     labels = ["name", "link", "min_shu", "max_shu", "heat", "jrp", "species", "origin"]
     return pd.DataFrame([dict(zip(labels, entry)) for entry in raw_data])
-
-def run(headers, schema):
-    # scrape data
-    raw_data = scrape_page(headers)
-    labeled_data = label_response_data(raw_data)
-    print("%d peppers fetched from PepperScale!" % len(labeled_data))
-
-    # sanitize data
-    sanitized_data = sanitize(labeled_data, schema)
-    return sanitized_data
 
 
 ### SANITIZATION FUNCTIONS
 
-def sanitize(data, schema):
+def _sanitize(data, schema):
     """Run all PepperScale sanitization functions; produce clean copy of raw data"""
     data["min_shu"] = _sanitize_shu(data, "min_shu")
     data["max_shu"] = _sanitize_shu(data, "max_shu")

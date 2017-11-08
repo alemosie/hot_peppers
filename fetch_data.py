@@ -1,5 +1,6 @@
 import pepperscale_fetcher
 import chiliworld_fetcher
+import hotstuff_fetcher
 
 import requests
 import pandas as pd
@@ -24,6 +25,8 @@ HEADERS = {
     "user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36(KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
 }
 
+DRIVER_PATH = '/Users/asiega/Development/chromedriver' # for selenium
+
 ### FETCHER
 
 class Fetcher():
@@ -31,7 +34,10 @@ class Fetcher():
     def __init__(self):
         self.pepperscale = pepperscale_fetcher.run(HEADERS, SCHEMA)
         self.chiliworld = chiliworld_fetcher.run(HEADERS)
-        self.all = pd.concat([self.pepperscale, self.chiliworld])
+        self.hotstuff = hotstuff_fetcher.run(HEADERS, DRIVER_PATH)
+        self.all = pd.concat([self.pepperscale, self.chiliworld, self.hotstuff])
+        print("\n%d total peppers fetched 🌶️ " % len(self.all))
+
 
 ### WRITERS
 

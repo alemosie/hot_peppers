@@ -11,19 +11,19 @@ BASE_URL = "https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScov
 
 ### FETCHER FUNCTIONS
 
-def scrape_page(headers):
+def run(headers):
+    pepper_data = _scrape_page(headers)
+    print("%d peppers fetched from ChiliWorld!" % len(pepper_data))
+
+    peppers = [_sanitize_row(row) for row in pepper_data[1:]] # first row is header row
+    return pd.DataFrame(peppers)
+
+def _scrape_page(headers):
     request = urllib.request.Request(BASE_URL, headers=headers)
     raw_html = urllib.request.urlopen(request).read().decode('utf-8')
     page_html = BeautifulSoup(raw_html, 'html.parser')
     pepper_data = page_html.find(id="ChilliPepperScovilleScale").find_all("tr")
     return pepper_data
-
-def run(headers):
-    pepper_data = scrape_page(headers)
-    print("%d peppers fetched from ChiliWorld!" % len(pepper_data))
-
-    peppers = [_sanitize_row(row) for row in pepper_data[1:]] # first row is header row
-    return pd.DataFrame(peppers)
 
 
 ### SANITIZATION FUNCTIONS
