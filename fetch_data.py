@@ -36,7 +36,7 @@ class Fetcher():
         self.chiliworld = chiliworld_fetcher.run(HEADERS)
         self.hotstuff = hotstuff_fetcher.run(HEADERS, DRIVER_PATH)
         self.all = pd.concat([self.pepperscale, self.chiliworld, self.hotstuff])
-        print("\n%d total peppers fetched 🌶️ " % len(self.all))
+        print("\n🌶️ %d total peppers fetched 🌶️ " % len(self.all))
 
 
 ### WRITERS
