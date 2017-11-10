@@ -68,7 +68,7 @@ def _sanitize_name(name):
 
 def _get_link(link):
     if len(link.findChildren()) == 0:
-        return link # link, heat, species to match to seed data later
+        return BASE_URL # link, heat, species to match to seed data later
     return "http://ushotstuff.com/" + link.find("a", href=True)["href"] # only want first link
 
 def _extract_hotstuff_pepper_info(row):
