@@ -6,44 +6,40 @@ I grew up with very little spice in my diet -- my mother is Irish, what can I sa
 
 ## Technology & Skills
 - Web scraping (Requests, urllib, nonces)
-- HTML parsing (BeautifulSoup)
-- Data sanitization (Pandas, fuzzywuzzy, regex)
+- HTML parsing (BeautifulSoup, Selenium)
+- Data sanitization (Pandas, fuzzywuzzy, Regex)
 - Regression analysis (scikit-learn)
-- Scalability: static vs dynamic data fetching, modularization
+- Code design (Python, modules, OOP, scalability)
 
 ## Data
 
 ### Background
 
-The base data is from [PepperScale](https://www.pepperscale.com), a website that seems to be entirely dedicated to the topic of peppers. I have no affiliation with the site, but am grateful for their work! I specifically curated this dataset from their [Hot Pepper List](https://www.pepperscale.com/hot-pepper-list/).
+The data is currently curated from [PepperScale](https://www.pepperscale.com/hot-pepper-list/),  [ChiliWorld](https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale), and [Uncle Steve's Hot Stuff]("http://ushotstuff.com/Heat.Scale.htm"). I have no affiliation with any of the sites, but am grateful for their work!
 
-Pepper hotness is based on the **Scoville Scale**, a measurement of the pungency of chili peppers running from mild to extreme. If you're interested in the scale -- along with its many pros and cons -- I recommend you read PepperScale's article on the subject [here](https://www.pepperscale.com/what-is-the-scoville-scale/), or trusty [Wikipedia](https://en.wikipedia.org/wiki/Scoville_scale).
-
-I used Python, [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/), [Requests](http://docs.python-requests.org/en/master/) and [Pandas](https://pandas.pydata.org/pandas-docs/stable/) to extract, sanitize, and convert the data into `data/peppers.json`, available for your enjoyment.
+While this project is in the "data sanitization" phase, you can find the most up-to-date set in `data/`. Both `.json` and `.csv` formats are available! If you plan on using the data, I'd love to know about it :)
 
 ### Schema
 
 Field | Description
 --- | ---
-"name"| Name of the pepper; unique
-"species" | Pepper species. All hot peppers belong to the Capsicum genus (part of the nightshade family), but there are multiple species within it.
-"heat" | How hot the pepper is perceived to be: "Mild", "Medium", "Extra Hot", "Super Hot" ([their](https://www.pepperscale.com/hot-pepper-list/) categories, not mine)
-"region" | Region of the world in which the pepper grows; based on provided origin. (Standardized origin)
-"origin" | Where the pepper grows; values are country, region, or continent as listed
-"min_shu" | Scoville Heat Units (SHU) for the mildest variation of the pepper
-"max_shu" | Scoville Heat Units (SHU) for the hottest variation of the pepper
-"min_jrp" | Jalapeño Reference Point (JRP); minimum value for number of times hotter than a jalapeño the pepper is
-"max_jrp" | Jalapeño Reference Point (JRP); maximum value for number of times hotter than a jalapeño the pepper is
-"link" | PepperScale article containing more information on the pepper
+"name"| String; name of the pepper; unique
+"species" | String; pepper species. All hot peppers belong to the Capsicum genus (part of the nightshade family), but there are multiple species within it.
+"heat" | Categorical; how hot the pepper is perceived to be: "Mild", "Medium", "Extra Hot", "Super Hot" ([their](https://www.pepperscale.com/hot-pepper-list/) categories, not mine)
+"region" | Categorical; region of the world in which the pepper grows; based on provided origin. (Standardized origin)
+"origin" | String; where the pepper grows; values are country, region, or continent as listed
+"min_shu" | Float; Scoville Heat Units (SHU) for the mildest variation of the pepper
+"max_shu" | Float; Scoville Heat Units (SHU) for the hottest variation of the pepper
+"min_jrp" | Float; Jalapeño Reference Point (JRP) for the minimum number of times hotter than a jalapeño the pepper is
+"max_jrp" | Float; Jalapeño Reference Point (JRP) for the maximum number of times hotter than a jalapeño the pepper is
+"link" |  String; more information on the pepper and/or data source link
+"source_name" | String; name of source site from which pepper data came
+
+Pepper hotness is based on the **Scoville Scale**, a measurement of the pungency of chili peppers running from mild to extreme. If you're interested in the scale -- along with its many pros and cons -- I recommend you read PepperScale's article on the subject [here](https://www.pepperscale.com/what-is-the-scoville-scale/), or trusty [Wikipedia](https://en.wikipedia.org/wiki/Scoville_scale).
 
 Basis for min/max [Scoville heat units (SHU)](https://www.pepperscale.com/scoville-heat-units/): Individual hot peppers have a range of heat, depending on where they are grown, how long they’ve matured, and the amount of sun they’ve received.
 
 Basis for min/max [Jalapeno Reference Point (JRP)](https://www.pepperscale.com/jalapeno-peppers/): The JRP is a subjective comparison of a pepper against a reference point most everyone has tried, resulting in a range of opinions. A negative number (like -50) means the amount of times the pepper is milder. A zero (0) means equal heat. Any positive numbers show the amount of times that the pepper is hotter than a jalapeño.
-
-### Future data to compare against/incorporate
-- https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale
-- http://ushotstuff.com/Heat.Scale.htm
-- https://www.cayennediane.com/the-scoville-scale/
 
 ## Helpful resources
 
@@ -58,11 +54,12 @@ Basis for min/max [Jalapeno Reference Point (JRP)](https://www.pepperscale.com/j
 - FiveThirtyEight's article on [Rating Chili Peppers](https://fivethirtyeight.com/features/rating-chili-peppers-on-a-scale-of-1-to-oh-dear-god-im-on-fire/)
 - Guinness Book of World Records on the [Hottest Chili](http://www.guinnessworldrecords.com/world-records/hottest-chili)
 
-## Sanitization/analysis to-do
+## Progress tracker & contributions
 
-- Explore "heat" categorical. What are the cutoff scores for each category? Why is there no regular "hot?" Should there be?
-- ~~Examine the two heat measurement scales: JRP & SHU. Do they follow the same pattern? Do they share outliers? What transformation was applied to the widely-used SHU to get the JRP (a PepperScale-specific metric)?~~
-- Clean up malformed JRP and SHU scores; some SHU values correspond to different JRP values
+Check out my [Trello board](https://trello.com/b/PTT5nKqH/hot-peppers-%F0%9F%8C%B6%EF%B8%8F) for insight into my process, what's been done, and what's on the docket.
 
+I welcome any and all contributions from the world at large! If you're interested in collaborating, please consider the following:
+- Git flow: fork the repository, submit PR
+- Request to be added as a member to the Trello board
 
 ![Alt Text](https://media.giphy.com/media/3oriO5w4cPs5SECFmU/giphy.gif)
