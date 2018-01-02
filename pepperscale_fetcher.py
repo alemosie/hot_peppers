@@ -4,7 +4,6 @@ from datetime import datetime
 import json
 import urllib.request # in Python2, it's urllib2
 import re
-import pdb
 from bs4 import BeautifulSoup
 
 # set constants

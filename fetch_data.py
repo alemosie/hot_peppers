@@ -1,6 +1,7 @@
 import pepperscale_fetcher
 import chiliworld_fetcher
 import hotstuff_fetcher
+import cayenne_diane_fetcher
 
 import requests
 import pandas as pd
@@ -35,7 +36,8 @@ class Fetcher():
         self.pepperscale = pepperscale_fetcher.run(HEADERS, SCHEMA)
         self.chiliworld = chiliworld_fetcher.run(HEADERS)
         self.hotstuff = hotstuff_fetcher.run(HEADERS, DRIVER_PATH)
-        self.all = pd.concat([self.pepperscale, self.chiliworld, self.hotstuff])
+        self.cayenne_diane = cayenne_diane_fetcher.run(HEADERS)
+        self.all = pd.concat([self.pepperscale, self.chiliworld, self.hotstuff, self.cayenne_diane])
         print("\n🌶️ %d total peppers fetched 🌶️ " % len(self.all))
 
 
@@ -75,6 +77,9 @@ if __name__ == '__main__':
         if "-json" in sys.argv:
             write_json(data.all, output_dir)
         elif "-csv" in sys.argv:
+            write_csv(data.all, output_dir)
+        elif "-w" in sys.argv:
+            write_json(data.all, output_dir)
             write_csv(data.all, output_dir)
 
     print("\nResults (first 3 entries):\n")

@@ -2,11 +2,9 @@ from bs4 import BeautifulSoup
 import urllib
 import pandas as pd
 from selenium import webdriver
-import pdb
 
 BASE_URL = "http://ushotstuff.com/Heat.Scale.htm"
 SEED_URL = "http://ushotstuff.com/"
-
 
 ### FETCHER FUNCTIONS
 
