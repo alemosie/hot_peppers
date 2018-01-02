@@ -1,10 +1,4 @@
-import requests
-import pandas as pd
-from datetime import datetime
-import json
-import urllib.request # in Python2, it's urllib2
-import re
-from bs4 import BeautifulSoup
+from packages import *
 
 # set constants
 BASE_URL = "https://www.pepperscale.com/hot-pepper-list/"

@@ -3,17 +3,7 @@ import chiliworld_fetcher
 import hotstuff_fetcher
 import cayenne_diane_fetcher
 
-import requests
-import pandas as pd
-from datetime import datetime
-import json
-import urllib.request # in Python2, it's urllib2
-import re
-from pprint import pprint as pp
-import sys
-import pdb
-import os
-from bs4 import BeautifulSoup
+from packages import *
 
 ### CONSTANTS
 
@@ -38,7 +28,7 @@ class Fetcher():
         self.hotstuff = hotstuff_fetcher.run(HEADERS, DRIVER_PATH)
         self.cayenne_diane = cayenne_diane_fetcher.run(HEADERS)
         self.all = pd.concat([self.pepperscale, self.chiliworld, self.hotstuff, self.cayenne_diane])
-        print("\n🌶️ %d total peppers fetched 🌶️ " % len(self.all))
+        print("\n🌶️  %d total peppers fetched 🌶️ " % len(self.all))
 
 
 ### WRITERS

@@ -1,6 +1,4 @@
-import pandas as pd
-from bs4 import BeautifulSoup
-import urllib.request
+from packages import *
 
 BASE_URL = "https://www.cayennediane.com/the-scoville-scale/"
 

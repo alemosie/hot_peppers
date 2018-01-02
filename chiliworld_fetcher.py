@@ -1,9 +1,4 @@
-import pandas as pd
-from fuzzywuzzy import fuzz
-import json
-from datetime import datetime
-from bs4 import BeautifulSoup
-import urllib.request
+from packages import *
 
 # set constants
 BASE_URL = "https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale"
