@@ -48,13 +48,13 @@ def write_json(data, output_dir="data"):
     print("Writing to %s..." % json_file)
     with open (json_file, "w") as f:
         f.write(header_info)
-        f.write(data[SCHEMA].to_json(orient='records'))
+        f.write(data[FULL_SCHEMA].to_json(orient='records'))
         f.write("}")
 
 def write_csv(data, output_dir="data"):
     csv_file = "{}/peppers_{}.csv".format(output_dir, str(datetime.now().date()).replace("-",""))
     print("Writing to %s..." % csv_file)
-    data[SCHEMA].to_csv(csv_file, index=False)
+    data[FULL_SCHEMA].to_csv(csv_file, index=False)
 
 ### RUNNER
 
