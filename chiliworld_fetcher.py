@@ -31,7 +31,7 @@ def _sanitize_row(row):
         sanitized_row["origin"] = _sanitize_location(raw_name)
         sanitized_row["min_shu"], sanitized_row["max_shu"] = _sanitize_shu(raw_shu)
         sanitized_row["source_name"] = "ChiliWorld"
-        sanitized_row["link"] = BASE_URL
+        sanitized_row["source_link"] = BASE_URL
         return sanitized_row
 
 def _sanitize_name(name):

@@ -65,7 +65,8 @@ def _sanitize(data, schema):
     data["species"] = _sanitize_species(data)
     data["origin"] = _sanitize_field(data, "origin", _sanitize_origin_value)
     data["region"] = _sanitize_field(data, "origin", _add_region_value)
-    data["link"] = _sanitize_link(data)
+    data["detail_link"] = _sanitize_link(data)
+    data["source_link"] = BASE_URL
     data["source_name"] = "PepperScale"
 
     return data[schema]
