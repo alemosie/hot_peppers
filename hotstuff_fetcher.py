@@ -1,12 +1,7 @@
-from bs4 import BeautifulSoup
-import urllib
-import pandas as pd
-from selenium import webdriver
-import pdb
+from packages import *
 
 BASE_URL = "http://ushotstuff.com/Heat.Scale.htm"
 SEED_URL = "http://ushotstuff.com/"
-
 
 ### FETCHER FUNCTIONS
 
@@ -47,7 +42,7 @@ def _scrape_pepper_page(driver_path):
 def _get_seed_row(row):
     row_tds = row.find_all("td")
     row_data = {
-        "link": "http://ushotstuff.com/" + row.find("a")["href"],
+        "detail_link": "http://ushotstuff.com/" + row.find("a")["href"],
         "heat": row_tds[1].text.lower(),
         "species": row_tds[2].text.lower()
     }
@@ -66,23 +61,23 @@ def _sanitize_shu(shu):
 def _sanitize_name(name):
     return name.text.strip()
 
-def _get_link(link):
-    if len(link.findChildren()) == 0:
-        return BASE_URL # link, heat, species to match to seed data later
-    return "http://ushotstuff.com/" + link.find("a", href=True)["href"] # only want first link
+def _get_detail_link(link):
+    if len(link.findChildren()) != 0:
+        return "http://ushotstuff.com/" + link.find("a", href=True)["href"] # only want first link
 
 def _extract_hotstuff_pepper_info(row):
     elements = row.find_all("td")
     try:
-        link, name, shu = [e for e in elements]
+        detail_link, name, shu = [e for e in elements]
         name = _sanitize_name(name)
-        link = _get_link(link)
+        detail_link = _get_detail_link(detail_link)
+        base_link = BASE_URL
         shu = _sanitize_shu(shu)
-        return dict(zip(["name", "link", "min_shu", "max_shu"], [name, link] + shu))
+        return dict(zip(["name", "detail_link", "source_link", "min_shu", "max_shu"],
+            [name, detail_link, BASE_URL] + shu))
     except: # malformed rows of not-quite-peppers at the end of the data; good for pepper comparison
         if len(row) > 1:
             name, shu = row.find_all('td')
             name = _sanitize_name(name)
             shu = _sanitize_shu(shu)
-            link = "http://ushotstuff.com/Heat.Scale.htm"
-            return dict(zip(["name", "link", "min_shu", "max_shu"], [name, link] + shu))
+            return dict(zip(["name", "source_link", "min_shu", "max_shu"], [name, BASE_URL] + shu))

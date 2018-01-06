@@ -15,7 +15,11 @@ I grew up with very little spice in my diet -- my mother is Irish, what can I sa
 
 ### Background
 
+<<<<<<< HEAD
 The data is currently curated from [PepperScale](https://www.pepperscale.com/hot-pepper-list/),  [ChiliWorld](https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale), and [Uncle Steve's Hot Stuff](http://ushotstuff.com/Heat.Scale.htm). I have no affiliation with any of the sites, but am grateful for their work!
+=======
+The data is currently curated from [PepperScale](https://www.pepperscale.com/hot-pepper-list/),  [ChiliWorld](https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale), [Uncle Steve's Hot Stuff](http://ushotstuff.com/Heat.Scale.htm), [Cayenne Diane](https://www.cayennediane.com/the-scoville-scale/), and [Pepperheads for Life](https://pepperheadsforlife.com/the-scoville-scale/). I have no affiliation with any of the sites, but am grateful for their work!
+>>>>>>> b8084ed9bc5fcfd5ff3896f83039e3b9cff9764d
 
 While this project is in the "data sanitization" phase, you can find the most up-to-date set in `data/`. Both `.json` and `.csv` formats are available! If you plan on using the data, I'd love to know about it :)
 
@@ -32,7 +36,8 @@ Field | Description
 "max_shu" | Float; Scoville Heat Units (SHU) for the hottest variation of the pepper
 "min_jrp" | Float; Jalapeño Reference Point (JRP) for the minimum number of times hotter than a jalapeño the pepper is
 "max_jrp" | Float; Jalapeño Reference Point (JRP) for the maximum number of times hotter than a jalapeño the pepper is
-"link" |  String; more information on the pepper and/or data source link
+"detail_link" | String; link to more information on the pepper
+"source_link" |  String; data source link
 "source_name" | String; name of source site from which pepper data came
 
 Pepper hotness is based on the **Scoville Scale**, a measurement of the pungency of chili peppers running from mild to extreme. If you're interested in the scale -- along with its many pros and cons -- I recommend you read PepperScale's article on the subject [here](https://www.pepperscale.com/what-is-the-scoville-scale/), or trusty [Wikipedia](https://en.wikipedia.org/wiki/Scoville_scale).

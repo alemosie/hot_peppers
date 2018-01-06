@@ -1,11 +1,4 @@
-import requests
-import pandas as pd
-from datetime import datetime
-import json
-import urllib.request # in Python2, it's urllib2
-import re
-import pdb
-from bs4 import BeautifulSoup
+from packages import *
 
 # set constants
 BASE_URL = "https://www.pepperscale.com/hot-pepper-list/"
@@ -72,7 +65,8 @@ def _sanitize(data, schema):
     data["species"] = _sanitize_species(data)
     data["origin"] = _sanitize_field(data, "origin", _sanitize_origin_value)
     data["region"] = _sanitize_field(data, "origin", _add_region_value)
-    data["link"] = _sanitize_link(data)
+    data["detail_link"] = _sanitize_link(data)
+    data["source_link"] = BASE_URL
     data["source_name"] = "PepperScale"
 
     return data[schema]

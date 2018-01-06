@@ -1,25 +1,18 @@
 import pepperscale_fetcher
 import chiliworld_fetcher
 import hotstuff_fetcher
+import cayenne_diane_fetcher
+import pepperheads_fetcher
 
-import requests
-import pandas as pd
-from datetime import datetime
-import json
-import urllib.request # in Python2, it's urllib2
-import re
-from pprint import pprint as pp
-import sys
-import pdb
-import os
-from bs4 import BeautifulSoup
+from packages import *
 
 ### CONSTANTS
 
-SCHEMA =  [
+FULL_SCHEMA =  [
     "name", "species", "heat", "region", "origin", "min_shu", "max_shu",
-    "min_jrp", "max_jrp", "link", "source_name"
+    "min_jrp", "max_jrp", "detail_link", "source_link", "source_name"
 ]
+SIMPLE_SCHEMA = ["name", "max_shu", "detail_link", "source_link", "source_name"] # CD & PH
 
 HEADERS = {
     "user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36(KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
@@ -32,11 +25,13 @@ DRIVER_PATH = '/Users/asiega/Development/chromedriver' # for selenium
 class Fetcher():
     """Fetch and contain pepper data from a variety of web sources"""
     def __init__(self):
-        self.pepperscale = pepperscale_fetcher.run(HEADERS, SCHEMA)
+        self.pepperscale = pepperscale_fetcher.run(HEADERS, FULL_SCHEMA)
+        self.pepperheads = pepperheads_fetcher.run(HEADERS, SIMPLE_SCHEMA)
+        self.cayenne_diane = cayenne_diane_fetcher.run(HEADERS, SIMPLE_SCHEMA)
         self.chiliworld = chiliworld_fetcher.run(HEADERS)
         self.hotstuff = hotstuff_fetcher.run(HEADERS, DRIVER_PATH)
-        self.all = pd.concat([self.pepperscale, self.chiliworld, self.hotstuff])
-        print("\n🌶️ %d total peppers fetched 🌶️ " % len(self.all))
+        self.all = pd.concat([self.pepperscale, self.pepperheads, self.cayenne_diane, self.chiliworld, self.hotstuff])
+        print("\n🌶️  %d total peppers fetched 🌶️ " % len(self.all))
 
 
 ### WRITERS
@@ -53,13 +48,13 @@ def write_json(data, output_dir="data"):
     print("Writing to %s..." % json_file)
     with open (json_file, "w") as f:
         f.write(header_info)
-        f.write(data[SCHEMA].to_json(orient='records'))
+        f.write(data[FULL_SCHEMA].to_json(orient='records'))
         f.write("}")
 
 def write_csv(data, output_dir="data"):
     csv_file = "{}/peppers_{}.csv".format(output_dir, str(datetime.now().date()).replace("-",""))
     print("Writing to %s..." % csv_file)
-    data[SCHEMA].to_csv(csv_file, index=False)
+    data[FULL_SCHEMA].to_csv(csv_file, index=False)
 
 ### RUNNER
 
@@ -76,6 +71,9 @@ if __name__ == '__main__':
             write_json(data.all, output_dir)
         elif "-csv" in sys.argv:
             write_csv(data.all, output_dir)
+        elif "-w" in sys.argv:
+            write_json(data.all, output_dir)
+            write_csv(data.all, output_dir)
 
-    print("\nResults (first 3 entries):\n")
-    pp(data.all[:3])
+    print("\nResults (random 10 entries):\n")
+    pp(data.all.sample(10).sort_index())
