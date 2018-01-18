@@ -7,7 +7,7 @@ I grew up with very little spice in my diet -- my mother is Irish, what can I sa
 ## Technology & Skills
 - Web scraping (Requests, urllib, nonces)
 - HTML parsing (BeautifulSoup, Selenium)
-- Data sanitization (Pandas, fuzzywuzzy, Regex)
+- Data sanitization (Pandas, fuzzywuzzy, difflib, Regex)
 - Regression analysis (scikit-learn)
 - Code design (Python, modules, OOP, scalability)
 
@@ -15,11 +15,7 @@ I grew up with very little spice in my diet -- my mother is Irish, what can I sa
 
 ### Background
 
-<<<<<<< HEAD
-The data is currently curated from [PepperScale](https://www.pepperscale.com/hot-pepper-list/),  [ChiliWorld](https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale), and [Uncle Steve's Hot Stuff](http://ushotstuff.com/Heat.Scale.htm). I have no affiliation with any of the sites, but am grateful for their work!
-=======
 The data is currently curated from [PepperScale](https://www.pepperscale.com/hot-pepper-list/),  [ChiliWorld](https://www.chilliworld.com/factfile/scoville-scale#ChilliPepperScovilleScale), [Uncle Steve's Hot Stuff](http://ushotstuff.com/Heat.Scale.htm), [Cayenne Diane](https://www.cayennediane.com/the-scoville-scale/), and [Pepperheads for Life](https://pepperheadsforlife.com/the-scoville-scale/). I have no affiliation with any of the sites, but am grateful for their work!
->>>>>>> b8084ed9bc5fcfd5ff3896f83039e3b9cff9764d
 
 While this project is in the "data sanitization" phase, you can find the most up-to-date set in `data/`. Both `.json` and `.csv` formats are available! If you plan on using the data, I'd love to know about it :)
 
