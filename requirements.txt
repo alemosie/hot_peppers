@@ -4,7 +4,7 @@ certifi==2017.11.5
 chardet==3.0.4
 fuzzywuzzy==0.16.0
 idna==2.6
-numpy==1.13.3
+numpy==1.22.0
 pandas==0.22.0
 python-dateutil==2.6.1
 python-Levenshtein==0.12.0
